@@ -1,0 +1,3 @@
+# tarballs and patches in sources directory
+sources/*.patch
+sources/*.tar.*
