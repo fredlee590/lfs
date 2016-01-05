@@ -1744,6 +1744,7 @@ Individual utilities
 * chown: (coreutils)chown invocation.           Change file owners and groups.
 * chroot: (coreutils)chroot invocation.         Specify the root directory.
 * cksum: (coreutils)cksum invocation.           Print POSIX CRC checksum.
+* cmp: (diffutils)Invoking cmp.                 Compare 2 files byte by byte.
 * comm: (coreutils)comm invocation.             Compare sorted files by line.
 * coreutils: (coreutils)Multi-call invocation.  Multi-call program.
 * cp: (coreutils)cp invocation.                 Copy files.
@@ -1753,6 +1754,8 @@ Individual utilities
 * date: (coreutils)date invocation.             Print/set system date and time.
 * dd: (coreutils)dd invocation.                 Copy and convert a file.
 * df: (coreutils)df invocation.                 Report file system disk usage.
+* diff: (diffutils)Invoking diff.               Compare 2 files line by line.
+* diff3: (diffutils)Invoking diff3.             Compare 3 files line by line.
 * dir: (coreutils)dir invocation.               List directories briefly.
 * dircolors: (coreutils)dircolors invocation.   Color setup for ls.
 * dirname: (coreutils)dirname invocation.       Strip last file name component.
@@ -1801,6 +1804,7 @@ Individual utilities
                                                   object files.
 * od: (coreutils)od invocation.                 Dump files in octal, etc.
 * paste: (coreutils)paste invocation.           Merge lines of files.
+* patch: (diffutils)Invoking patch.             Apply a patch to a file.
 * pathchk: (coreutils)pathchk invocation.       Check file name portability.
 * pr: (coreutils)pr invocation.                 Paginate or columnate files.
 * printenv: (coreutils)printenv invocation.     Print environment variables.
@@ -1816,6 +1820,7 @@ Individual utilities
 * rm: (coreutils)rm invocation.                 Remove files.
 * rmdir: (coreutils)rmdir invocation.           Remove empty directories.
 * runcon: (coreutils)runcon invocation.         Run in specified SELinux CTX.
+* sdiff: (diffutils)Invoking sdiff.             Merge 2 files side-by-side.
 * seq: (coreutils)seq invocation.               Print numeric sequences
 * sha1sum: (coreutils)sha1sum invocation.       Print or check SHA-1 digests.
 * sha2: (coreutils)sha2 utilities.              Print or check SHA-2 digests.
@@ -1883,3 +1888,6 @@ Software development
 
 Software libraries
 * Libc: (libc).                 C library.
+
+Text creation and manipulation
+* Diffutils: (diffutils).       Comparing and merging files.
