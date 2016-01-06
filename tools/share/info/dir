@@ -1917,6 +1917,26 @@ Software development
 Software libraries
 * Libc: (libc).                 C library.
 
+Texinfo documentation system
+* Info: (info).                 How to use the documentation browsing system.
+* info stand-alone: (info-stnd).
+                                Read Info documents without Emacs.
+* install-info: (texinfo)Invoking install-info.
+                                Update info/dir entries.
+* makeinfo: (texinfo)Invoking makeinfo.
+                                Translate Texinfo source.
+* pdftexi2dvi: (texinfo)PDF Output.
+                                PDF output for Texinfo.
+* pod2texi: (pod2texi)Invoking pod2texi.
+                                Translate Perl POD to Texinfo.
+* texi2dvi: (texinfo)Format with texi2dvi.
+                                Print Texinfo documents.
+* texi2pdf: (texinfo)PDF Output.
+                                PDF output for Texinfo.
+* texindex: (texinfo)Format with tex/texindex.
+                                Sort Texinfo index files.
+* Texinfo: (texinfo).           The GNU documentation format.
+
 Text creation and manipulation
 * Diffutils: (diffutils).       Comparing and merging files.
 * Gawk: (gawk).                 A text scanning and processing language.
