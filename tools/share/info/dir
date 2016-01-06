@@ -1905,3 +1905,4 @@ Software libraries
 Text creation and manipulation
 * Diffutils: (diffutils).       Comparing and merging files.
 * Gawk: (gawk).                 A text scanning and processing language.
+* grep: (grep).                 Print lines matching a pattern.
