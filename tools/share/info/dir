@@ -21,6 +21,7 @@ Basics
 * Date input formats: (coreutils)Date input formats.
 * File permissions: (coreutils)File permissions.
                                 Access modes.
+* Finding files: (find).        Operating on files matching certain criteria.
 
 GNU C library functions and macros
 * __fbufsize: (libc)Controlling Buffering.
@@ -1727,6 +1728,10 @@ GNU Libraries
 * libitm: (libitm).             GNU Transactional Memory Library
 * libquadmath: (libquadmath).   GCC Quad-Precision Math Library
 
+GNU organization
+* Maintaining Findutils: (find-maint).
+                                Maintaining GNU findutils
+
 Individual utilities
 * addr2line: (binutils)addr2line.               Convert addresses to file and 
                                                   line.
@@ -1770,6 +1775,7 @@ Individual utilities
 * expr: (coreutils)expr invocation.             Evaluate expressions.
 * factor: (coreutils)factor invocation.         Print prime factors
 * false: (coreutils)false invocation.           Do nothing, unsuccessfully.
+* find: (find)Invoking find.                    Finding and acting on files.
 * fmt: (coreutils)fmt invocation.               Reformat paragraph text.
 * fold: (coreutils)fold invocation.             Wrap long input lines.
 * groups: (coreutils)groups invocation.         Print group names a user is in.
@@ -1782,6 +1788,7 @@ Individual utilities
 * kill: (coreutils)kill invocation.             Send a signal to processes.
 * link: (coreutils)link invocation.             Make hard links between files.
 * ln: (coreutils)ln invocation.                 Make links between files.
+* locate: (find)Invoking locate.                Finding files in a database.
 * logname: (coreutils)logname invocation.       Print current login name.
 * ls: (coreutils)ls invocation.                 List directory contents.
 * md5sum: (coreutils)md5sum invocation.         Print or check MD5 digests.
@@ -1854,6 +1861,7 @@ Individual utilities
 * unexpand: (coreutils)unexpand invocation.     Convert spaces to tabs.
 * uniq: (coreutils)uniq invocation.             Uniquify files.
 * unlink: (coreutils)unlink invocation.         Removal via unlink(2).
+* updatedb: (find)Invoking updatedb.            Building the locate database.
 * uptime: (coreutils)uptime invocation.         Print uptime and load.
 * users: (coreutils)users invocation.           Print current user names.
 * vdir: (coreutils)vdir invocation.             List directories verbosely.
@@ -1863,6 +1871,7 @@ Individual utilities
 * windmc: (binutils)windmc.                     Generator for Windows message 
                                                   resources.
 * windres: (binutils)windres.                   Manipulate Windows resources.
+* xargs: (find)Invoking xargs.                  Operating on many files.
 * yes: (coreutils)yes invocation.               Print a string indefinitely.
 
 Programming
