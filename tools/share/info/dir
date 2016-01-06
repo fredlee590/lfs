@@ -1918,3 +1918,4 @@ Text creation and manipulation
 * Gawk: (gawk).                 A text scanning and processing language.
 * M4: (m4).                     A powerful macro processor.
 * grep: (grep).                 Print lines matching a pattern.
+* sed: (sed).                   Stream EDitor.  
