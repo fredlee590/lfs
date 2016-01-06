@@ -1738,6 +1738,7 @@ Individual utilities
 * ar: (binutils)ar.                             Create, modify, and extract 
                                                   from archives.
 * arch: (coreutils)arch invocation.             Print machine hardware name.
+* awk: (gawk)Invoking gawk.                     Text scanning and processing.
 * base64: (coreutils)base64 invocation.         Base64 encode/decode data.
 * basename: (coreutils)basename invocation.     Strip directory and suffix.
 * c++filt: (binutils)c++filt.                   Filter to demangle encoded C++ 
@@ -1874,6 +1875,9 @@ Individual utilities
 * xargs: (find)Invoking xargs.                  Operating on many files.
 * yes: (coreutils)yes invocation.               Print a string indefinitely.
 
+Network applications
+* Gawkinet: (gawkinet).         TCP/IP Internetworking With `gawk'.
+
 Programming
 * DejaGnu: (dejagnu).           The GNU testing framework.
 
@@ -1900,3 +1904,4 @@ Software libraries
 
 Text creation and manipulation
 * Diffutils: (diffutils).       Comparing and merging files.
+* Gawk: (gawk).                 A text scanning and processing language.
