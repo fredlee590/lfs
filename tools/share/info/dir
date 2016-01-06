@@ -14,6 +14,9 @@ File: dir,	Node: Top	This is the top of the INFO tree
 
 * Menu:
 
+Archiving
+* Tar: (tar).                   Making tape (or disk) archives.
+
 Basics
 * Bash: (bash).                 The GNU Bourne-Again SHell.
 * Common options: (coreutils)Common options.
@@ -1854,6 +1857,7 @@ Individual utilities
 * sync: (coreutils)sync invocation.             Synchronize memory to disk.
 * tac: (coreutils)tac invocation.               Reverse files.
 * tail: (coreutils)tail invocation.             Output the last part of files.
+* tar: (tar)tar invocation.                     Invoking GNU `tar'.
 * tee: (coreutils)tee invocation.               Redirect to multiple files.
 * test: (coreutils)test invocation.             File/string tests.
 * timeout: (coreutils)timeout invocation.       Run with time limit.
