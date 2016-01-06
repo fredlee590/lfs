@@ -23,6 +23,9 @@ Basics
                                 Access modes.
 * Finding files: (find).        Operating on files matching certain criteria.
 
+Compression
+* Gzip: (gzip).                 General (de)compression of files (lzw).
+
 GNU C library functions and macros
 * __fbufsize: (libc)Controlling Buffering.
 * __flbf: (libc)Controlling Buffering.
@@ -1780,6 +1783,8 @@ Individual utilities
 * fmt: (coreutils)fmt invocation.               Reformat paragraph text.
 * fold: (coreutils)fold invocation.             Wrap long input lines.
 * groups: (coreutils)groups invocation.         Print group names a user is in.
+* gunzip: (gzip)Overview.                       Decompression.
+* gzexe: (gzip)Overview.                        Compress executables.
 * head: (coreutils)head invocation.             Output the first part of files.
 * hostid: (coreutils)hostid invocation.         Print numeric host identifier.
 * hostname: (coreutils)hostname invocation.     Print or set system name.
@@ -1874,6 +1879,11 @@ Individual utilities
 * windres: (binutils)windres.                   Manipulate Windows resources.
 * xargs: (find)Invoking xargs.                  Operating on many files.
 * yes: (coreutils)yes invocation.               Print a string indefinitely.
+* zcat: (gzip)Overview.                         Decompression to stdout.
+* zdiff: (gzip)Overview.                        Compare compressed files.
+* zforce: (gzip)Overview.                       Force .gz extension on files.
+* zgrep: (gzip)Overview.                        Search compressed files.
+* zmore: (gzip)Overview.                        Decompression output by pages.
 
 Network applications
 * Gawkinet: (gawkinet).         TCP/IP Internetworking With `gawk'.
