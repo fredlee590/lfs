@@ -6,3 +6,6 @@ sources/*.tar.*
 tools/libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/cc1
 tools/libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/cc1plus
 tools/libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto1
+
+# backup files
+*.tgz
