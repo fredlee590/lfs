@@ -1,2 +1,4 @@
+It is important that all commands throughout the remainder of this chapter and the following chapters are run from within the chroot environment. If you leave this environment for any reason (rebooting for example), ensure that the virtual kernel filesystems are mounted as explained in Section 6.2.2 "Mounting and Populating /dev" and Section 6.2.3 "Mounting Virtual Kernel File Systems" and enter chroot again before continuing with the installation.
+
 As root user (su -):
 chroot "$LFS" /tools/bin/env -i HOME=/root TERM="$TERM" PS1='\u:\w\$ ' PATH=/bin:/usr/bin:/sbin:/usr/sbin:/tools/bin /tools/bin/bash --login +h
