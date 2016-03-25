@@ -1716,6 +1716,9 @@ GNU C library functions and macros
 GNU libraries
 * gmp: (gmp).                   GNU Multiple Precision Arithmetic Library.
 
+GNU Packages
+* mpc: (mpc)Multiple Precision Complex Library.
+
 Individual utilities
 * addr2line: (binutils)addr2line.               Convert addresses to file and 
                                                   line.
