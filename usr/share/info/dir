@@ -1713,6 +1713,9 @@ GNU C library functions and macros
 * ynl: (libc)Special Functions.
 * yn: (libc)Special Functions.
 
+GNU libraries
+* gmp: (gmp).                   GNU Multiple Precision Arithmetic Library.
+
 Individual utilities
 * addr2line: (binutils)addr2line.               Convert addresses to file and 
                                                   line.
