@@ -1758,3 +1758,5 @@ Software development
 
 Software libraries
 * Libc: (libc).                 C library.
+* mpfr: (mpfr).                 Multiple Precision Floating-Point Reliable 
+                                  Library.
