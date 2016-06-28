@@ -1892,4 +1892,5 @@ Software libraries
                                   Library.
 
 Text creation and manipulation
+* M4: (m4).                     A powerful macro processor.
 * sed: (sed).                   Stream EDitor.  
