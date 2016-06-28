@@ -1869,6 +1869,11 @@ Individual utilities
 * windres: (binutils)windres.                   Manipulate Windows resources.
 * yes: (coreutils)yes invocation.               Print a string indefinitely.
 
+Libraries
+* History: (history).           The GNU history library API.
+* RLuserman: (rluserman).       The GNU readline library User's Manual.
+* Readline: (readline).         The GNU readline library API.
+
 Programming
 * flex: (flex).                 Fast lexical analyzer generator (lex 
                                   replacement).
