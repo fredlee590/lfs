@@ -1898,4 +1898,5 @@ Software libraries
 
 Text creation and manipulation
 * M4: (m4).                     A powerful macro processor.
+* grep: (grep).                 Print lines matching a pattern.
 * sed: (sed).                   Stream EDitor.  
