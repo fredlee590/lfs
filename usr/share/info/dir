@@ -1869,6 +1869,10 @@ Individual utilities
 * windres: (binutils)windres.                   Manipulate Windows resources.
 * yes: (coreutils)yes invocation.               Print a string indefinitely.
 
+Programming
+* flex: (flex).                 Fast lexical analyzer generator (lex 
+                                  replacement).
+
 Software development
 * As: (as).                     The GNU assembler.
 * Bfd: (bfd).                   The Binary File Descriptor library.
