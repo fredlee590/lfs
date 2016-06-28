@@ -1875,6 +1875,10 @@ Libraries
 * RLuserman: (rluserman).       The GNU readline library User's Manual.
 * Readline: (readline).         The GNU readline library API.
 
+Miscellaneous
+* bc: (bc).                     An arbitrary precision calculator language.
+* dc: (dc).                     Arbitrary precision RPN "Desktop Calculator".
+
 Programming
 * flex: (flex).                 Fast lexical analyzer generator (lex 
                                   replacement).
