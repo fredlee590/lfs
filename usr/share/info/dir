@@ -1787,6 +1787,9 @@ Individual utilities
 * install: (coreutils)install invocation.       Copy files and set attributes.
 * join: (coreutils)join invocation.             Join lines on a common field.
 * kill: (coreutils)kill invocation.             Send a signal to processes.
+* libtool-invocation: (libtool)Invoking libtool.
+                                                Running the 'libtool' script.
+* libtoolize: (libtool)Invoking libtoolize.     Adding libtool support.
 * link: (coreutils)link invocation.             Make hard links between files.
 * ln: (coreutils)ln invocation.                 Make links between files.
 * logname: (coreutils)logname invocation.       Print current login name.
@@ -1891,6 +1894,7 @@ Software development
 * Cpplib: (cppinternals).       Cpplib internals.
 * Gas: (as).                    The GNU assembler.
 * Ld: (ld).                     The GNU linker.
+* Libtool: (libtool).           Generic shared library support script.
 * bison: (bison).               GNU parser generator (Yacc replacement).
 * g++: (gcc).                   The GNU C++ compiler.
 * gcc: (gcc).                   The GNU Compiler Collection.
