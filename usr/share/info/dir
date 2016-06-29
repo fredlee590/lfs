@@ -1886,6 +1886,11 @@ Programming
 * flex: (flex).                 Fast lexical analyzer generator (lex 
                                   replacement).
 
+Programming & development tools
+* gdbm_dump: gdbm_dump(gdbm).   Dump the GDBM database into a flat file.
+* gdbm_load: gdbm_load(gdbm).   Load the database from a flat file.
+* GDBM: (gdbm).                 The GNU database manager.
+
 Software development
 * As: (as).                     The GNU assembler.
 * Bfd: (bfd).                   The Binary File Descriptor library.
