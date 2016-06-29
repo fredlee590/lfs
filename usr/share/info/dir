@@ -16,7 +16,9 @@ File: dir	Node: Top	This is the top of the INFO tree
 
 Basics
 * Bash: (bash).                 The GNU Bourne-Again SHell.
-* Common options: (coreutils)Common options.
+* Common options: (inetutils)Common options.
+                                Common options.
+* Inetutils: (inetutils).       GNU networking utilities.
 * Coreutils: (coreutils).       Core GNU (file, text, shell) utilities.
 * Date input formats: (coreutils)Date input formats.
 * File permissions: (coreutils)File permissions.
@@ -1768,6 +1770,8 @@ Individual utilities
 * dirname: (coreutils)dirname invocation.       Strip last file name component.
 * dlltool: (binutils)dlltool.                   Create files needed to build 
                                                   and use DLLs.
+* dnsdomainname: (inetutils)dnsdomainname invocation.
+                                                Show DNS domain name.
 * du: (coreutils)du invocation.                 Report on disk usage.
 * echo: (coreutils)echo invocation.             Print a line of text.
 * elfedit: (binutils)elfedit.                   Update the ELF header of ELF 
@@ -1779,11 +1783,14 @@ Individual utilities
 * false: (coreutils)false invocation.           Do nothing, unsuccessfully.
 * fmt: (coreutils)fmt invocation.               Reformat paragraph text.
 * fold: (coreutils)fold invocation.             Wrap long input lines.
+* ftp: (inetutils)ftp invocation.               FTP client.
+* ftpd: (inetutils)ftpd invocation.             FTP Daemon.
 * groups: (coreutils)groups invocation.         Print group names a user is in.
 * head: (coreutils)head invocation.             Output the first part of files.
 * hostid: (coreutils)hostid invocation.         Print numeric host identifier.
-* hostname: (coreutils)hostname invocation.     Print or set system name.
+* hostname: (inetutils)hostname invocation.     Show or set system host name.
 * id: (coreutils)id invocation.                 Print user identity.
+* inetd: (inetutils)inetd invocation.           Internet super-server.
 * install: (coreutils)install invocation.       Copy files and set attributes.
 * join: (coreutils)join invocation.             Join lines on a common field.
 * kill: (coreutils)kill invocation.             Send a signal to processes.
@@ -1792,6 +1799,8 @@ Individual utilities
 * libtoolize: (libtool)Invoking libtoolize.     Adding libtool support.
 * link: (coreutils)link invocation.             Make hard links between files.
 * ln: (coreutils)ln invocation.                 Make links between files.
+* logger: (inetutils)logger invocation.         Send messages to the system 
+                                                  log.
 * logname: (coreutils)logname invocation.       Print current login name.
 * ls: (coreutils)ls invocation.                 List directory contents.
 * md5sum: (coreutils)md5sum invocation.         Print or check MD5 digests.
@@ -1815,6 +1824,8 @@ Individual utilities
 * od: (coreutils)od invocation.                 Dump files in octal, etc.
 * paste: (coreutils)paste invocation.           Merge lines of files.
 * pathchk: (coreutils)pathchk invocation.       Check file name portability.
+* ping: (inetutils)ping invocation.             Packets to network hosts.
+* ping6: (inetutils)ping6 invocation.           Packets to IPv6 network hosts.
 * pr: (coreutils)pr invocation.                 Paginate or columnate files.
 * printenv: (coreutils)printenv invocation.     Print environment variables.
 * printf: (coreutils)printf invocation.         Format and print data.
@@ -1822,12 +1833,19 @@ Individual utilities
 * pwd: (coreutils)pwd invocation.               Print working directory.
 * ranlib: (binutils)ranlib.                     Generate index to archive 
                                                   contents.
+* rcp: (inetutils)rcp invocation.               Remote copy
 * readelf: (binutils)readelf.                   Display the contents of ELF 
                                                   format files.
 * readlink: (coreutils)readlink invocation.     Print referent of a symlink.
 * realpath: (coreutils)realpath invocation.     Print resolved file names.
+* rexec: (inetutils)rexec invocation.           Remote execution client.
+* rexecd: (inetutils)rexecd invocation.         Remote execution server.
+* rlogin: (inetutils)rlogin invocation.         Remote login.
+* rlogind: (inetutils)rlogind invocation.       Remote login server.
 * rm: (coreutils)rm invocation.                 Remove files.
 * rmdir: (coreutils)rmdir invocation.           Remove empty directories.
+* rsh: (inetutils)rsh invocation.               Remote shell.
+* rshd: (inetutils)rshd invocation.             Remote shell server.
 * runcon: (coreutils)runcon invocation.         Run in specified SELinux CTX.
 * seq: (coreutils)seq invocation.               Print numeric sequences
 * sha1sum: (coreutils)sha1sum invocation.       Print or check SHA-1 digests.
@@ -1847,13 +1865,21 @@ Individual utilities
 * stty: (coreutils)stty invocation.             Print/change terminal settings.
 * sum: (coreutils)sum invocation.               Print traditional checksum.
 * sync: (coreutils)sync invocation.             Synchronize memory to disk.
+* syslogd: (inetutils)syslogd invocation.       Syslog server.
 * tac: (coreutils)tac invocation.               Reverse files.
 * tail: (coreutils)tail invocation.             Output the last part of files.
+* talk: (inetutils)talk invocation.             Talk client.
+* talkd: (inetutils)talkd invocation.           Talk server.
 * tee: (coreutils)tee invocation.               Redirect to multiple files.
+* telnet: (inetutils)telnet invocation.         User interface to TELNET.
+* telnetd: (inetutils)telnetd invocation.       Telnet server.
 * test: (coreutils)test invocation.             File/string tests.
+* tftp: (inetutils)tftp invocation.             TFTP client.
+* tftpd: (inetutils)tftpd invocation.           TFTP server.
 * timeout: (coreutils)timeout invocation.       Run with time limit.
 * touch: (coreutils)touch invocation.           Change file timestamps.
 * tr: (coreutils)tr invocation.                 Translate characters.
+* traceroute: (inetutils)traceroute invocation. Trace the route to a host.
 * true: (coreutils)true invocation.             Do nothing, successfully.
 * truncate: (coreutils)truncate invocation.     Shrink/extend size of a file.
 * tsort: (coreutils)tsort invocation.           Topological sort.
@@ -1864,10 +1890,12 @@ Individual utilities
 * unlink: (coreutils)unlink invocation.         Removal via unlink(2).
 * uptime: (coreutils)uptime invocation.         Print uptime and load.
 * users: (coreutils)users invocation.           Print current user names.
+* uucpd: (inetutils)uucpd invocation.           Unix to Unix Copy.
 * vdir: (coreutils)vdir invocation.             List directories verbosely.
 * wc: (coreutils)wc invocation.                 Line, word, and byte counts.
 * who: (coreutils)who invocation.               Print who is logged in.
 * whoami: (coreutils)whoami invocation.         Print effective user ID.
+* whois: (inetutils)whois invocation.           Whois user interface.
 * windmc: (binutils)windmc.                     Generator for Windows message 
                                                   resources.
 * windres: (binutils)windres.                   Manipulate Windows resources.
