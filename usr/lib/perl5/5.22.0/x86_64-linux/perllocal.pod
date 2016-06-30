@@ -1,0 +1,22 @@
+=head2 Thu Jun 30 00:01:39 2016: C<Module> L<XML::Parser|XML::Parser>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/lib/perl5/site_perl/5.22.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.44>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
