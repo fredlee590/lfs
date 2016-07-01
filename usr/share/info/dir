@@ -1743,6 +1743,8 @@ GNU Packages
 * mpc: (mpc)Multiple Precision Complex Library.
 
 Individual utilities
+* aclocal-invocation: (automake)aclocal Invocation.
+                                                Generating aclocal.m4.
 * addr2line: (binutils)addr2line.               Convert addresses to file and 
                                                   line.
 * ar: (binutils)ar.                             Create, modify, and extract 
@@ -1755,6 +1757,8 @@ Individual utilities
                                                   templates
 * autom4te: (autoconf)autom4te Invocation.      The Autoconf executables 
                                                   backbone
+* automake-invocation: (automake)automake Invocation.
+                                                Generating Makefile.in.
 * autoreconf: (autoconf)autoreconf Invocation.  Remaking multiple `configure' 
                                                   scripts
 * autoscan: (autoconf)autoscan Invocation.      Semi-automatic `configure.ac' 
@@ -1943,6 +1947,7 @@ Programming & development tools
 Software development
 * As: (as).                     The GNU assembler.
 * Autoconf: (autoconf).         Create source code configuration scripts.
+* Automake: (automake).         Making GNU standards-compliant Makefiles.
 * Bfd: (bfd).                   The Binary File Descriptor library.
 * Binutils: (binutils).         The GNU binary utilities.
 * Cpp: (cpp).                   The GNU C preprocessor.
