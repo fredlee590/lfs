@@ -28,6 +28,9 @@ Basics
 C++ libraries
 * autosprintf: (autosprintf).   Support for printf format strings in C++.
 
+Compression
+* Gzip: (gzip).                 General (de)compression of files (lzw).
+
 Development
 * Com_err: (com_err).           A Common Error Description Library for UNIX.
 * libext2fs: (libext2fs).       The EXT2FS library.
@@ -1865,6 +1868,8 @@ Individual utilities
 * ftp: (inetutils)ftp invocation.               FTP client.
 * ftpd: (inetutils)ftpd invocation.             FTP Daemon.
 * groups: (coreutils)groups invocation.         Print group names a user is in.
+* gunzip: (gzip)Overview.                       Decompression.
+* gzexe: (gzip)Overview.                        Compress executables.
 * head: (coreutils)head invocation.             Output the first part of files.
 * hostid: (coreutils)hostid invocation.         Print numeric host identifier.
 * hostname: (inetutils)hostname invocation.     Show or set system host name.
@@ -1986,6 +1991,11 @@ Individual utilities
 * windres: (binutils)windres.                   Manipulate Windows resources.
 * xargs: (find)Invoking xargs.                  Operating on many files.
 * yes: (coreutils)yes invocation.               Print a string indefinitely.
+* zcat: (gzip)Overview.                         Decompression to stdout.
+* zdiff: (gzip)Overview.                        Compare compressed files.
+* zforce: (gzip)Overview.                       Force .gz extension on files.
+* zgrep: (gzip)Overview.                        Search compressed files.
+* zmore: (gzip)Overview.                        Decompression output by pages.
 
 Kernel
 * grub-dev: (grub-dev).         The GRand Unified Bootloader Dev
