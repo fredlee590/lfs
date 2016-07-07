@@ -1987,6 +1987,23 @@ Individual utilities
 * xargs: (find)Invoking xargs.                  Operating on many files.
 * yes: (coreutils)yes invocation.               Print a string indefinitely.
 
+Kernel
+* grub-dev: (grub-dev).         The GRand Unified Bootloader Dev
+* grub-install: (grub)Invoking grub-install.
+                                Install GRUB on your drive
+* grub-mkconfig: (grub)Invoking grub-mkconfig.
+                                Generate GRUB configuration
+* grub-mkpasswd-pbkdf2: (grub)Invoking grub-mkpasswd-pbkdf2.
+* grub-mkrelpath: (grub)Invoking grub-mkrelpath.
+* grub-mkrescue: (grub)Invoking grub-mkrescue.
+                                Make a GRUB rescue image
+* grub-mount: (grub)Invoking grub-mount.
+                                Mount a file system using GRUB
+* grub-probe: (grub)Invoking grub-probe.
+                                Probe device information
+* grub-script-check: (grub)Invoking grub-script-check.
+* GRUB: (grub).                 The GRand Unified Bootloader
+
 Libraries
 * History: (history).           The GNU history library API.
 * RLuserman: (rluserman).       The GNU readline library User's Manual.
