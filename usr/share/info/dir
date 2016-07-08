@@ -2046,6 +2046,7 @@ Software development
 * Gas: (as).                    The GNU assembler.
 * Ld: (ld).                     The GNU linker.
 * Libtool: (libtool).           Generic shared library support script.
+* Make: (make).                 Remake files automatically.
 * bison: (bison).               GNU parser generator (Yacc replacement).
 * g++: (gcc).                   The GNU C++ compiler.
 * gcc: (gcc).                   The GNU Compiler Collection.
