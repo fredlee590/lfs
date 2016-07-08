@@ -14,6 +14,9 @@ File: dir	Node: Top	This is the top of the INFO tree
 
 * Menu: 
 
+Archiving
+* Tar: (tar).                   Making tape (or disk) archives.
+
 Basics
 * Bash: (bash).                 The GNU Bourne-Again SHell.
 * Common options: (inetutils)Common options.
@@ -1958,6 +1961,7 @@ Individual utilities
 * tail: (coreutils)tail invocation.             Output the last part of files.
 * talk: (inetutils)talk invocation.             Talk client.
 * talkd: (inetutils)talkd invocation.           Talk server.
+* tar: (tar)tar invocation.                     Invoking GNU `tar'.
 * tee: (coreutils)tee invocation.               Redirect to multiple files.
 * telnet: (inetutils)telnet invocation.         User interface to TELNET.
 * telnetd: (inetutils)telnetd invocation.       Telnet server.

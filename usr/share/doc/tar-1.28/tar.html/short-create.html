@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: short create</title>
+
+<meta name="description" content="GNU tar 1.28: short create">
+<meta name="keywords" content="GNU tar 1.28: short create">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="create.html#create" rel="up" title="create">
+<link href="create-dir.html#create-dir" rel="next" title="create dir">
+<link href="create-verbose.html#create-verbose" rel="prev" title="create verbose">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="short-create"></a>
+<div class="header">
+<p>
+Next: <a href="create-dir.html#create-dir" accesskey="n" rel="next">create dir</a>, Previous: <a href="create-verbose.html#create-verbose" accesskey="p" rel="prev">create verbose</a>, Up: <a href="create.html#create" accesskey="u" rel="up">create</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Short-Forms-with-create"></a>
+<h4 class="subsection">2.6.4 Short Forms with &lsquo;<samp>create</samp>&rsquo;</h4>
+
+<p>As we said before, the <samp>--create</samp> (<samp>-c</samp>) operation is one of the most
+basic uses of <code>tar</code>, and you will use it countless times.
+Eventually, you will probably want to use abbreviated (or &ldquo;short&rdquo;)
+forms of options.  A full discussion of the three different forms that
+options can take appears in <a href="Styles.html#Styles">Styles</a>; for now, here is what the
+previous example (including the <samp>--verbose</samp> (<samp>-v</samp>) option) looks like
+using short option forms:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar -cvf collection.tar blues folk jazz</kbd>
+blues
+folk
+jazz
+</pre></div>
+
+<p>As you can see, the system responds the same no matter whether you use
+long or short option forms.
+</p>
+<p>One difference between using
+short and long option forms is that, although the exact placement of
+arguments following options is no more specific when using short forms,
+it is easier to become confused and make a mistake when using short
+forms.  For example, suppose you attempted the above example in the
+following way:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar -cfv collection.tar blues folk jazz</kbd>
+</pre></div>
+
+<p>In this case, <code>tar</code> will make an archive file called <samp>v</samp>,
+containing the files <samp>blues</samp>, <samp>folk</samp>, and <samp>jazz</samp>, because
+the &lsquo;<samp>v</samp>&rsquo; is the closest &ldquo;file name&rdquo; to the <samp>-f</samp> option, and
+is thus taken to be the chosen archive file name.  <code>tar</code> will try
+to add a file called <samp>collection.tar</samp> to the <samp>v</samp> archive file;
+if the file <samp>collection.tar</samp> did not already exist, <code>tar</code> will
+report an error indicating that this file does not exist.  If the file
+<samp>collection.tar</samp> does already exist (e.g., from a previous command
+you may have run), then <code>tar</code> will add this file to the archive.
+Because the <samp>-v</samp> option did not get registered, <code>tar</code> will not
+run under &lsquo;<samp>verbose</samp>&rsquo; mode, and will not report its progress.
+</p>
+<p>The end result is that you may be quite confused about what happened,
+and possibly overwrite a file.  To illustrate this further, we will show
+you how an example we showed previously would look using short forms.
+</p>
+<p>This example,
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar blues --create folk --file=collection.tar jazz</kbd>
+</pre></div>
+
+<p>is confusing as it is.  When shown using short forms, however, it
+becomes much more so:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar blues -c folk -f collection.tar jazz</kbd>
+</pre></div>
+
+<p>It would be very easy to put the wrong string of characters
+immediately following the <samp>-f</samp>, but doing that could sacrifice
+valuable data.
+</p>
+<p>For this reason, we recommend that you pay very careful attention to
+the order of options and placement of file and archive names,
+especially when using short option forms.  Not having the option name
+written out mnemonically can affect how well you remember which option
+does what, and therefore where different names have to be placed.
+</p>
+<hr>
+<div class="header">
+<p>
+Next: <a href="create-dir.html#create-dir" accesskey="n" rel="next">create dir</a>, Previous: <a href="create-verbose.html#create-verbose" accesskey="p" rel="prev">create verbose</a>, Up: <a href="create.html#create" accesskey="u" rel="up">create</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

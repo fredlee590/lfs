@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: backup</title>
+
+<meta name="description" content="GNU tar 1.28: backup">
+<meta name="keywords" content="GNU tar 1.28: backup">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="operations.html#operations" rel="up" title="operations">
+<link href="Applications.html#Applications" rel="next" title="Applications">
+<link href="Same-Order.html#Same-Order" rel="prev" title="Same Order">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="backup"></a>
+<div class="header">
+<p>
+Next: <a href="Applications.html#Applications" accesskey="n" rel="next">Applications</a>, Previous: <a href="extract-options.html#extract-options" accesskey="p" rel="prev">extract options</a>, Up: <a href="operations.html#operations" accesskey="u" rel="up">operations</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Backup-options"></a>
+<h3 class="section">4.5 Backup options</h3>
+
+<a name="index-backup-options"></a>
+
+<p><acronym>GNU</acronym> <code>tar</code> offers options for making backups of files
+before writing new versions.  These options control the details of
+these backups.  They may apply to the archive itself before it is
+created or rewritten, as well as individual extracted members.  Other
+<acronym>GNU</acronym> programs (<code>cp</code>, <code>install</code>, <code>ln</code>,
+and <code>mv</code>, for example) offer similar options.
+</p>
+<p>Backup options may prove unexpectedly useful when extracting archives
+containing many members having identical name, or when extracting archives
+on systems having file name limitations, making different members appear
+as having similar names through the side-effect of name truncation.
+</p>
+<p>When any existing file is backed up before being overwritten by extraction,
+then clashing files are automatically be renamed to be unique, and the
+true name is kept for only the last file of a series of clashing files.
+By using verbose mode, users may track exactly what happens.
+</p>
+<p>At the detail level, some decisions are still experimental, and may
+change in the future, we are waiting comments from our users.  So, please
+do not learn to depend blindly on the details of the backup features.
+For example, currently, directories themselves are never renamed through
+using these options, so, extracting a file over a directory still has
+good chances to fail.  Also, backup options apply to created archives,
+not only to extracted members.  For created archives, backups will not
+be attempted when the archive is a block or character device, or when it
+refers to a remote file.
+</p>
+<p>For the sake of simplicity and efficiency, backups are made by renaming old
+files prior to creation or extraction, and not by copying.  The original
+name is restored if the file creation fails.  If a failure occurs after a
+partial extraction of a file, both the backup and the partially extracted
+file are kept.
+</p>
+<dl compact="compact">
+<dt>&lsquo;<samp>--backup[=<var>method</var>]</samp>&rsquo;</dt>
+<dd><a name="index-backup"></a>
+<a name="index-VERSION_005fCONTROL"></a>
+<a name="index-backups"></a>
+<p>Back up files that are about to be overwritten or removed.
+Without this option, the original versions are destroyed.
+</p>
+<p>Use <var>method</var> to determine the type of backups made.
+If <var>method</var> is not specified, use the value of the <code>VERSION_CONTROL</code>
+environment variable.  And if <code>VERSION_CONTROL</code> is not set,
+use the &lsquo;<samp>existing</samp>&rsquo; method.
+</p>
+<a name="index-version_002dcontrol-Emacs-variable"></a>
+<p>This option corresponds to the Emacs variable &lsquo;<samp>version-control</samp>&rsquo;;
+the same values for <var>method</var> are accepted as in Emacs.  This option
+also allows more descriptive names.  The valid <var>method</var>s are:
+</p>
+<dl compact="compact">
+<dt>&lsquo;<samp>t</samp>&rsquo;</dt>
+<dt>&lsquo;<samp>numbered</samp>&rsquo;</dt>
+<dd><a name="index-numbered-backup-method"></a>
+<p>Always make numbered backups.
+</p>
+</dd>
+<dt>&lsquo;<samp>nil</samp>&rsquo;</dt>
+<dt>&lsquo;<samp>existing</samp>&rsquo;</dt>
+<dd><a name="index-existing-backup-method"></a>
+<p>Make numbered backups of files that already have them, simple backups
+of the others.
+</p>
+</dd>
+<dt>&lsquo;<samp>never</samp>&rsquo;</dt>
+<dt>&lsquo;<samp>simple</samp>&rsquo;</dt>
+<dd><a name="index-simple-backup-method"></a>
+<p>Always make simple backups.
+</p>
+</dd>
+</dl>
+
+</dd>
+<dt>&lsquo;<samp>--suffix=<var>suffix</var></samp>&rsquo;</dt>
+<dd><a name="index-suffix"></a>
+<a name="index-backup-suffix"></a>
+<a name="index-SIMPLE_005fBACKUP_005fSUFFIX"></a>
+<p>Append <var>suffix</var> to each backup file made with <samp>--backup</samp>.  If this
+option is not specified, the value of the <code>SIMPLE_BACKUP_SUFFIX</code>
+environment variable is used.  And if <code>SIMPLE_BACKUP_SUFFIX</code> is not
+set, the default is &lsquo;<samp>~</samp>&rsquo;, just as in Emacs.
+</p>
+</dd>
+</dl>
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Applications.html#Applications" accesskey="n" rel="next">Applications</a>, Previous: <a href="extract-options.html#extract-options" accesskey="p" rel="prev">extract options</a>, Up: <a href="operations.html#operations" accesskey="u" rel="up">operations</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

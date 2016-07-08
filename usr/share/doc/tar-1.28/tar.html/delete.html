@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: delete</title>
+
+<meta name="description" content="GNU tar 1.28: delete">
+<meta name="keywords" content="GNU tar 1.28: delete">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Advanced-tar.html#Advanced-tar" rel="up" title="Advanced tar">
+<link href="compare.html#compare" rel="next" title="compare">
+<link href="concatenate.html#concatenate" rel="prev" title="concatenate">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="delete"></a>
+<div class="header">
+<p>
+Next: <a href="compare.html#compare" accesskey="n" rel="next">compare</a>, Previous: <a href="concatenate.html#concatenate" accesskey="p" rel="prev">concatenate</a>, Up: <a href="Advanced-tar.html#Advanced-tar" accesskey="u" rel="up">Advanced tar</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Removing-Archive-Members-Using-_002d_002ddelete"></a>
+<h4 class="subsection">4.2.5 Removing Archive Members Using <samp>--delete</samp></h4>
+<a name="index-Deleting-files-from-an-archive"></a>
+<a name="index-Removing-files-from-an-archive"></a>
+
+<a name="index-delete"></a>
+<p>You can remove members from an archive by using the <samp>--delete</samp>
+option.  Specify the name of the archive with <samp>--file</samp>
+(<samp>-f</samp>) and then specify the names of the members to be deleted;
+if you list no member names, nothing will be deleted.  The
+<samp>--verbose</samp> option will cause <code>tar</code> to print the names
+of the members as they are deleted. As with <samp>--extract</samp>, you
+must give the exact member names when using &lsquo;<samp>tar --delete</samp>&rsquo;.
+<samp>--delete</samp> will remove all versions of the named file from the
+archive.  The <samp>--delete</samp> operation can run very slowly.
+</p>
+<p>Unlike other operations, <samp>--delete</samp> has no short form.
+</p>
+<a name="index-Tapes_002c-using-_002d_002ddelete-and"></a>
+<a name="index-Deleting-from-tape-archives"></a>
+<p>This operation will rewrite the archive.  You can only use
+<samp>--delete</samp> on an archive if the archive device allows you to
+write to any point on the media, such as a disk; because of this, it
+does not work on magnetic tapes.  Do not try to delete an archive member
+from a magnetic tape; the action will not succeed, and you will be
+likely to scramble the archive and damage your tape.  There is no safe
+way (except by completely re-writing the archive) to delete files from
+most kinds of magnetic tape.  See <a href="Media.html#Media">Media</a>.
+</p>
+<p>To delete all versions of the file <samp>blues</samp> from the archive
+<samp>collection.tar</samp> in the <samp>practice</samp> directory, make sure you
+are in that directory, and then,
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar --list --file=collection.tar</kbd>
+blues
+folk
+jazz
+rock
+$ <kbd>tar --delete --file=collection.tar blues</kbd>
+$ <kbd>tar --list --file=collection.tar</kbd>
+folk
+jazz
+rock
+</pre></div>
+
+
+
+<p>The <samp>--delete</samp> option has been reported to work properly when
+<code>tar</code> acts as a filter from <code>stdin</code> to <code>stdout</code>.
+</p>
+<hr>
+<div class="header">
+<p>
+Next: <a href="compare.html#compare" accesskey="n" rel="next">compare</a>, Previous: <a href="concatenate.html#concatenate" accesskey="p" rel="prev">concatenate</a>, Up: <a href="Advanced-tar.html#Advanced-tar" accesskey="u" rel="up">Advanced tar</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

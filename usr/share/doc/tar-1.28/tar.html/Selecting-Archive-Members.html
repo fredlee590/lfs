@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: Selecting Archive Members</title>
+
+<meta name="description" content="GNU tar 1.28: Selecting Archive Members">
+<meta name="keywords" content="GNU tar 1.28: Selecting Archive Members">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Choosing.html#Choosing" rel="up" title="Choosing">
+<link href="files.html#files" rel="next" title="files">
+<link href="file.html#file" rel="prev" title="file">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Selecting-Archive-Members"></a>
+<div class="header">
+<p>
+Next: <a href="files.html#files" accesskey="n" rel="next">files</a>, Previous: <a href="file.html#file" accesskey="p" rel="prev">file</a>, Up: <a href="Choosing.html#Choosing" accesskey="u" rel="up">Choosing</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Selecting-Archive-Members-1"></a>
+<h3 class="section">6.2 Selecting Archive Members</h3>
+<a name="index-Specifying-files-to-act-on"></a>
+<a name="index-Specifying-archive-members"></a>
+
+<p><em>File Name arguments</em> specify which files in the file system
+<code>tar</code> operates on, when creating or adding to an archive, or which
+archive members <code>tar</code> operates on, when reading or deleting from
+an archive.  See <a href="Operations.html#Operations">Operations</a>.
+</p>
+<p>To specify file names, you can include them as the last arguments on
+the command line, as follows:
+</p><div class="smallexample">
+<pre class="smallexample"><kbd>tar</kbd> <var>operation</var> [<var>option1</var> <var>option2</var> &hellip;] [<var>file name-1</var> <var>file name-2</var> &hellip;]
+</pre></div>
+
+<p>If a file name begins with dash (&lsquo;<samp>-</samp>&rsquo;), precede it with
+<samp>--add-file</samp> option to prevent it from being treated as an
+option.
+</p>
+<a name="input-name-quoting"></a><p>By default <acronym>GNU</acronym> <code>tar</code> attempts to <em>unquote</em> each file or member
+name, replacing <em>escape sequences</em> according to the following
+table:
+</p>
+<table>
+<thead><tr><th width="20%">Escape</th><th width="60%">Replaced with</th></tr></thead>
+<tr><td width="20%">\a</td><td width="60%">Audible bell (<acronym>ASCII</acronym> 7)</td></tr>
+<tr><td width="20%">\b</td><td width="60%">Backspace (<acronym>ASCII</acronym> 8)</td></tr>
+<tr><td width="20%">\f</td><td width="60%">Form feed (<acronym>ASCII</acronym> 12)</td></tr>
+<tr><td width="20%">\n</td><td width="60%">New line (<acronym>ASCII</acronym> 10)</td></tr>
+<tr><td width="20%">\r</td><td width="60%">Carriage return (<acronym>ASCII</acronym> 13)</td></tr>
+<tr><td width="20%">\t</td><td width="60%">Horizontal tabulation (<acronym>ASCII</acronym> 9)</td></tr>
+<tr><td width="20%">\v</td><td width="60%">Vertical tabulation (<acronym>ASCII</acronym> 11)</td></tr>
+<tr><td width="20%">\?</td><td width="60%"><acronym>ASCII</acronym> 127</td></tr>
+<tr><td width="20%">\<var>n</var></td><td width="60%"><acronym>ASCII</acronym> <var>n</var> (<var>n</var> should be an octal number
+                 of up to 3 digits)</td></tr>
+</table>
+
+<p>A backslash followed by any other symbol is retained.
+</p>
+<p>This default behavior is controlled by the following command line
+option:
+</p>
+<dl compact="compact">
+<dd><a name="index-unquote"></a>
+</dd>
+<dt><samp>--unquote</samp></dt>
+<dd><p>Enable unquoting input file or member names (default).
+</p>
+<a name="index-no_002dunquote"></a>
+</dd>
+<dt><samp>--no-unquote</samp></dt>
+<dd><p>Disable unquoting input file or member names.
+</p></dd>
+</dl>
+
+<p>If you specify a directory name as a file name argument, all the files
+in that directory are operated on by <code>tar</code>.
+</p>
+<p>If you do not specify files, <code>tar</code> behavior differs depending
+on the operation mode as described below:
+</p>
+<p>When <code>tar</code> is invoked with <samp>--create</samp> (<samp>-c</samp>),
+<code>tar</code> will stop immediately, reporting the following:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar cf a.tar</kbd>
+tar: Cowardly refusing to create an empty archive
+Try 'tar --help' or 'tar --usage' for more information.
+</pre></div>
+
+<p>If you specify either <samp>--list</samp> (<samp>-t</samp>) or
+<samp>--extract</samp> (<samp>--get</samp>, <samp>-x</samp>), <code>tar</code>
+operates on all the archive members in the archive.
+</p>
+<p>If run with <samp>--diff</samp> option, tar will compare the archive with
+the contents of the current working directory.
+</p>
+<p>If you specify any other operation, <code>tar</code> does nothing.
+</p>
+<p>By default, <code>tar</code> takes file names from the command line.  However,
+there are other ways to specify file or member names, or to modify the
+manner in which <code>tar</code> selects the files or members upon which to
+operate.  In general, these methods work both for specifying the names
+of files and archive members.
+</p>
+<hr>
+<div class="header">
+<p>
+Next: <a href="files.html#files" accesskey="n" rel="next">files</a>, Previous: <a href="file.html#file" accesskey="p" rel="prev">file</a>, Up: <a href="Choosing.html#Choosing" accesskey="u" rel="up">Choosing</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

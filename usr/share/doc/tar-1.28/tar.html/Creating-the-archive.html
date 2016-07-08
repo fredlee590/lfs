@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: Creating the archive</title>
+
+<meta name="description" content="GNU tar 1.28: Creating the archive">
+<meta name="keywords" content="GNU tar 1.28: Creating the archive">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="create.html#create" rel="up" title="create">
+<link href="create-verbose.html#create-verbose" rel="next" title="create verbose">
+<link href="prepare-for-examples.html#prepare-for-examples" rel="prev" title="prepare for examples">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Creating-the-archive"></a>
+<div class="header">
+<p>
+Next: <a href="create-verbose.html#create-verbose" accesskey="n" rel="next">create verbose</a>, Previous: <a href="prepare-for-examples.html#prepare-for-examples" accesskey="p" rel="prev">prepare for examples</a>, Up: <a href="create.html#create" accesskey="u" rel="up">create</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Creating-the-Archive"></a>
+<h4 class="subsection">2.6.2 Creating the Archive</h4>
+
+<a name="index-create_002c-introduced"></a>
+<p>To place the files <samp>blues</samp>, <samp>folk</samp>, and <samp>jazz</samp> into an
+archive named <samp>collection.tar</samp>, use the following command:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar --create --file=collection.tar blues folk jazz</kbd>
+</pre></div>
+
+<p>The order of the arguments is not very important, <em>when using long
+option forms</em>.  You could also say:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar blues --create folk --file=collection.tar jazz</kbd>
+</pre></div>
+
+<p>However, you can see that this order is harder to understand; this is
+why we will list the arguments in the order that makes the commands
+easiest to understand (and we encourage you to do the same when you use
+<code>tar</code>, to avoid errors).
+</p>
+<p>Note that the sequence
+<samp>--file=collection.tar</samp> is considered to be <em>one</em> argument.
+If you substituted any other string of characters for
+<kbd>collection.tar</kbd>,  then that string would become the name of the
+archive file you create.
+</p>
+<p>The order of the options becomes more important when you begin to use
+short forms.  With short forms, if you type commands in the wrong order
+(even if you type them correctly in all other ways), you may end up with
+results you don&rsquo;t expect.  For this reason, it is a good idea to get
+into the habit of typing options in the order that makes inherent sense.
+See <a href="short-create.html#short-create">short create</a>, for more information on this.
+</p>
+<p>In this example, you type the command as shown above: <samp>--create</samp>
+is the operation which creates the new archive
+(<samp>collection.tar</samp>), and <samp>--file</samp> is the option which lets
+you give it the name you chose.  The files, <samp>blues</samp>, <samp>folk</samp>,
+and <samp>jazz</samp>, are now members of the archive, <samp>collection.tar</samp>
+(they are <em>file name arguments</em> to the <samp>--create</samp> operation.
+See <a href="Choosing.html#Choosing">Choosing</a>, for the detailed discussion on these.) Now that they are
+in the archive, they are called <em>archive members</em>, not files.
+(see <a href="Definitions.html#Definitions">members</a>).
+</p>
+<p>When you create an archive, you <em>must</em> specify which files you
+want placed in the archive.  If you do not specify any archive
+members, <acronym>GNU</acronym> <code>tar</code> will complain.
+</p>
+<p>If you now list the contents of the working directory (<code>ls</code>), you will
+find the archive file listed as well as the files you saw previously:
+</p>
+<div class="smallexample">
+<pre class="smallexample">blues   folk   jazz   collection.tar
+</pre></div>
+
+<p>Creating the archive &lsquo;<samp>collection.tar</samp>&rsquo; did not destroy the copies of
+the files in the directory.
+</p>
+<p>Keep in mind that if you don&rsquo;t indicate an operation, <code>tar</code> will not
+run and will prompt you for one.  If you don&rsquo;t name any files, <code>tar</code>
+will complain.  You must have write access to the working directory,
+or else you will not be able to create an archive in that directory.
+</p>
+<p><em>Caution</em>: Do not attempt to use <samp>--create</samp> (<samp>-c</samp>) to add files to
+an existing archive; it will delete the archive and write a new one.
+Use <samp>--append</samp> (<samp>-r</samp>) instead.  See <a href="append.html#append">append</a>.
+</p>
+<hr>
+<div class="header">
+<p>
+Next: <a href="create-verbose.html#create-verbose" accesskey="n" rel="next">create verbose</a>, Previous: <a href="prepare-for-examples.html#prepare-for-examples" accesskey="p" rel="prev">prepare for examples</a>, Up: <a href="create.html#create" accesskey="u" rel="up">create</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

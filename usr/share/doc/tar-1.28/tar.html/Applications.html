@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: Applications</title>
+
+<meta name="description" content="GNU tar 1.28: Applications">
+<meta name="keywords" content="GNU tar 1.28: Applications">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="operations.html#operations" rel="up" title="operations">
+<link href="looking-ahead.html#looking-ahead" rel="next" title="looking ahead">
+<link href="backup.html#backup" rel="prev" title="backup">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Applications"></a>
+<div class="header">
+<p>
+Next: <a href="looking-ahead.html#looking-ahead" accesskey="n" rel="next">looking ahead</a>, Previous: <a href="backup.html#backup" accesskey="p" rel="prev">backup</a>, Up: <a href="operations.html#operations" accesskey="u" rel="up">operations</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Notable-tar-Usages"></a>
+<h3 class="section">4.6 Notable <code>tar</code> Usages</h3>
+<blockquote>
+<p><em>(This message will disappear, once this node revised.)</em>
+</p></blockquote>
+
+
+
+
+
+<a name="index-uuencode"></a>
+<p>You can easily use archive files to transport a group of files from
+one system to another: put all relevant files into an archive on one
+computer system, transfer the archive to another system, and extract
+the contents there.  The basic transfer medium might be magnetic tape,
+Internet FTP, or even electronic mail (though you must encode the
+archive with <code>uuencode</code> in order to transport it properly by
+mail).  Both machines do not have to use the same operating system, as
+long as they both support the <code>tar</code> program.
+</p>
+<p>For example, here is how you might copy a directory&rsquo;s contents from
+one disk to another, while preserving the dates, modes, owners and
+link-structure of all the files therein.  In this case, the transfer
+medium is a <em>pipe</em>:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>(cd sourcedir; tar -cf - .) | (cd targetdir; tar -xf -)</kbd>
+</pre></div>
+
+<p>You can avoid subshells by using <samp>-C</samp> option:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar -C sourcedir -cf - . | tar -C targetdir -xf -</kbd>
+</pre></div>
+
+<p>The command also works using long option forms:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>(cd sourcedir; tar --create --file=- . ) \
+       | (cd targetdir; tar --extract --file=-)</kbd>
+</pre></div>
+
+<p>or
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar --directory sourcedir --create --file=- . \
+       | tar --directory targetdir --extract --file=-</kbd>
+</pre></div>
+
+<p>This is one of the easiest methods to transfer a <code>tar</code> archive.
+</p>
+
+
+
+</body>
+</html>

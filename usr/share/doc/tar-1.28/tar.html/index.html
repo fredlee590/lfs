@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: Top</title>
+
+<meta name="description" content="GNU tar 1.28: Top">
+<meta name="keywords" content="GNU tar 1.28: Top">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="../dir/index.html" rel="up" title="(dir)">
+<link href="Introduction.html#Introduction" rel="next" title="Introduction">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<h1 class="settitle" align="center">GNU tar 1.28</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a name="Top"></a>
+<div class="header">
+<p>
+Next: <a href="Introduction.html#Introduction" accesskey="n" rel="next">Introduction</a>, Up: <a href="../dir/index.html" accesskey="u" rel="up">(dir)</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="GNU-tar_003a-an-archiver-tool"></a>
+<h1 class="top"><acronym>GNU</acronym> tar: an archiver tool</h1>
+
+
+<p>This manual is for <acronym>GNU</acronym> <code>tar</code> (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+</p>
+<p>Copyright &copy; 1992, 1994&ndash;1997, 1999&ndash;2001, 2003&ndash;2013 Free
+Software Foundation, Inc.
+</p>
+<blockquote>
+<p>Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being &ldquo;GNU General Public License&rdquo;, with the
+Front-Cover Texts being &ldquo;A GNU Manual&rdquo;, and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled &ldquo;GNU Free Documentation License&rdquo;.
+</p>
+<p>(a) The FSF&rsquo;s Back-Cover Text is: &ldquo;You have the freedom to
+copy and modify this GNU manual.&rdquo;
+</p></blockquote>
+
+
+<a name="index-file-archival"></a>
+<a name="index-archiving-files"></a>
+
+<p>The first part of this master menu lists the major nodes in this Info
+document.  The rest of the menu lists all the lower level nodes.
+</p>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="Introduction.html#Introduction" accesskey="1">Introduction</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Tutorial.html#Tutorial" accesskey="2">Tutorial</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="tar-invocation.html#tar-invocation" accesskey="3">tar invocation</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="operations.html#operations" accesskey="4">operations</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Backups.html#Backups" accesskey="5">Backups</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Choosing.html#Choosing" accesskey="6">Choosing</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Date-input-formats.html#Date-input-formats" accesskey="7">Date input formats</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Formats.html#Formats" accesskey="8">Formats</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Media.html#Media" accesskey="9">Media</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Reliability-and-security.html#Reliability-and-security">Reliability and security</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Appendices
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Changes.html#Changes">Changes</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Configuring-Help-Summary.html#Configuring-Help-Summary">Configuring Help Summary</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Fixing-Snapshot-Files.html#Fixing-Snapshot-Files">Fixing Snapshot Files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Tar-Internals.html#Tar-Internals">Tar Internals</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Genfile.html#Genfile">Genfile</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Free-Software-Needs-Free-Documentation.html#Free-Software-Needs-Free-Documentation">Free Software Needs Free Documentation</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="GNU-Free-Documentation-License.html#GNU-Free-Documentation-License">GNU Free Documentation License</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options">Index of Command Line Options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Index.html#Index">Index</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+</pre></th></tr><tr><th colspan="3" align="left" valign="top"><pre class="menu-comment"> &mdash; The Detailed Node Listing &mdash;
+
+Introduction
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Book-Contents.html#Book-Contents">Book Contents</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">What this Book Contains
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Definitions.html#Definitions">Definitions</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Some Definitions
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="What-tar-Does.html#What-tar-Does">What tar Does</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">What <code>tar</code> Does
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Naming-tar-Archives.html#Naming-tar-Archives">Naming tar Archives</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">How <code>tar</code> Archives are Named
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Authors.html#Authors">Authors</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><acronym>GNU</acronym> <code>tar</code> Authors
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Reports.html#Reports">Reports</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Reporting bugs or suggestions
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Tutorial Introduction to <code>tar</code>
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="assumptions.html#assumptions">assumptions</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="stylistic-conventions.html#stylistic-conventions">stylistic conventions</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="basic-tar-options.html#basic-tar-options">basic tar options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Basic <code>tar</code> Operations and Options
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="frequent-operations.html#frequent-operations">frequent operations</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Two-Frequent-Options.html#Two-Frequent-Options">Two Frequent Options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="create.html#create">create</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">How to Create Archives
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="list.html#list">list</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">How to List Archives
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="extract.html#extract">extract</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">How to Extract Members from an Archive
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="going-further.html#going-further">going further</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Two Frequently Used Options
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="file-tutorial.html#file-tutorial">file tutorial</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="verbose-tutorial.html#verbose-tutorial">verbose tutorial</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="help-tutorial.html#help-tutorial">help tutorial</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+How to Create Archives
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="prepare-for-examples.html#prepare-for-examples">prepare for examples</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Creating-the-archive.html#Creating-the-archive">Creating the archive</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="create-verbose.html#create-verbose">create verbose</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="short-create.html#short-create">short create</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="create-dir.html#create-dir">create dir</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+How to List Archives
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="list-dir.html#list-dir">list dir</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+How to Extract Members from an Archive
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="extracting-archives.html#extracting-archives">extracting archives</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="extracting-files.html#extracting-files">extracting files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="extract-dir.html#extract-dir">extract dir</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="extracting-untrusted-archives.html#extracting-untrusted-archives">extracting untrusted archives</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="failing-commands.html#failing-commands">failing commands</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Invoking <acronym>GNU</acronym> <code>tar</code>
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Synopsis.html#Synopsis">Synopsis</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="using-tar-options.html#using-tar-options">using tar options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Styles.html#Styles">Styles</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="All-Options.html#All-Options">All Options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="help.html#help">help</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="defaults.html#defaults">defaults</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="verbose.html#verbose">verbose</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="checkpoints.html#checkpoints">checkpoints</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="warnings.html#warnings">warnings</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="interactive.html#interactive">interactive</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+The Three Option Styles
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Long-Options.html#Long-Options">Long Options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Long Option Style
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Short-Options.html#Short-Options">Short Options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Short Option Style
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Old-Options.html#Old-Options">Old Options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Old Option Style
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Mixing.html#Mixing">Mixing</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Mixing Option Styles
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+All <code>tar</code> Options
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Operation-Summary.html#Operation-Summary">Operation Summary</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Option-Summary.html#Option-Summary">Option Summary</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Short-Option-Summary.html#Short-Option-Summary">Short Option Summary</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+<acronym>GNU</acronym> <code>tar</code> Operations
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Basic-tar.html#Basic-tar">Basic tar</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Advanced-tar.html#Advanced-tar">Advanced tar</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="create-options.html#create-options">create options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="extract-options.html#extract-options">extract options</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="backup.html#backup">backup</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Applications.html#Applications">Applications</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="looking-ahead.html#looking-ahead">looking ahead</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Advanced <acronym>GNU</acronym> <code>tar</code> Operations
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Operations.html#Operations">Operations</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="append.html#append">append</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="update.html#update">update</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="concatenate.html#concatenate">concatenate</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="delete.html#delete">delete</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="compare.html#compare">compare</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+How to Add Files to Existing Archives: <samp>--append</samp>
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="appending-files.html#appending-files">appending files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Appending Files to an Archive
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="multiple.html#multiple">multiple</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Updating an Archive
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="how-to-update.html#how-to-update">how to update</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Options Used by <samp>--create</samp>
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="override.html#override">override</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Overriding File Metadata.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Ignore-Failed-Read.html#Ignore-Failed-Read">Ignore Failed Read</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Options Used by <samp>--extract</samp>
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Reading.html#Reading">Reading</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Options to Help Read Archives
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Writing.html#Writing">Writing</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Changing How <code>tar</code> Writes Files
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Scarce.html#Scarce">Scarce</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Coping with Scarce Resources
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Options to Help Read Archives
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="read-full-records.html#read-full-records">read full records</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Ignore-Zeros.html#Ignore-Zeros">Ignore Zeros</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Changing How <code>tar</code> Writes Files
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Dealing-with-Old-Files.html#Dealing-with-Old-Files">Dealing with Old Files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Overwrite-Old-Files.html#Overwrite-Old-Files">Overwrite Old Files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Keep-Old-Files.html#Keep-Old-Files">Keep Old Files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Keep-Newer-Files.html#Keep-Newer-Files">Keep Newer Files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Unlink-First.html#Unlink-First">Unlink First</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Recursive-Unlink.html#Recursive-Unlink">Recursive Unlink</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Data-Modification-Times.html#Data-Modification-Times">Data Modification Times</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Setting-Access-Permissions.html#Setting-Access-Permissions">Setting Access Permissions</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Directory-Modification-Times-and-Permissions.html#Directory-Modification-Times-and-Permissions">Directory Modification Times and Permissions</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Writing-to-Standard-Output.html#Writing-to-Standard-Output">Writing to Standard Output</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Writing-to-an-External-Program.html#Writing-to-an-External-Program">Writing to an External Program</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="remove-files.html#remove-files">remove files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Coping with Scarce Resources
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Starting-File.html#Starting-File">Starting File</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Same-Order.html#Same-Order">Same Order</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Performing Backups and Restoring Files
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Full-Dumps.html#Full-Dumps">Full Dumps</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Using <code>tar</code> to Perform Full Dumps
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Incremental-Dumps.html#Incremental-Dumps">Incremental Dumps</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Using <code>tar</code> to Perform Incremental Dumps
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Backup-Levels.html#Backup-Levels">Backup Levels</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Levels of Backups
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Backup-Parameters.html#Backup-Parameters">Backup Parameters</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Setting Parameters for Backups and Restoration
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Scripted-Backups.html#Scripted-Backups">Scripted Backups</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Using the Backup Scripts
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Scripted-Restoration.html#Scripted-Restoration">Scripted Restoration</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Using the Restore Script
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Setting Parameters for Backups and Restoration
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="General_002dPurpose-Variables.html#General_002dPurpose-Variables">General-Purpose Variables</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Magnetic-Tape-Control.html#Magnetic-Tape-Control">Magnetic Tape Control</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="User-Hooks.html#User-Hooks">User Hooks</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="backup_002dspecs-example.html#backup_002dspecs-example">backup-specs example</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">An Example Text of <samp>Backup-specs</samp>
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Choosing Files and Names for <code>tar</code>
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="file.html#file">file</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Choosing the Archive&rsquo;s Name
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Selecting-Archive-Members.html#Selecting-Archive-Members">Selecting Archive Members</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="files.html#files">files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Reading Names from a File
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="exclude.html#exclude">exclude</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Excluding Some Files
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="wildcards.html#wildcards">wildcards</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Wildcards Patterns and Matching
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="quoting-styles.html#quoting-styles">quoting styles</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Ways of Quoting Special Characters in Names
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="transform.html#transform">transform</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Modifying File and Member Names
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="after.html#after">after</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Operating Only on New Files
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="recurse.html#recurse">recurse</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Descending into Directories
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="one.html#one">one</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Crossing File System Boundaries
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Reading Names from a File
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="nul.html#nul">nul</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Excluding Some Files
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="problems-with-exclude.html#problems-with-exclude">problems with exclude</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Wildcards Patterns and Matching
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="controlling-pattern_002dmatching.html#controlling-pattern_002dmatching">controlling pattern-matching</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Crossing File System Boundaries
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="directory.html#directory">directory</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Changing Directory
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="absolute.html#absolute">absolute</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Absolute File Names
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Date input formats
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="General-date-syntax.html#General-date-syntax">General date syntax</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Common rules.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Calendar-date-items.html#Calendar-date-items">Calendar date items</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">19 Dec 1994.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Time-of-day-items.html#Time-of-day-items">Time of day items</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">9:20pm.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Time-zone-items.html#Time-zone-items">Time zone items</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><small>EST</small>, <small>PDT</small>, <small>GMT</small>.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Day-of-week-items.html#Day-of-week-items">Day of week items</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Monday and others.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Relative-items-in-date-strings.html#Relative-items-in-date-strings">Relative items in date strings</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">next tuesday, 2 years ago.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Pure-numbers-in-date-strings.html#Pure-numbers-in-date-strings">Pure numbers in date strings</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">19931219, 1440.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Seconds-since-the-Epoch.html#Seconds-since-the-Epoch">Seconds since the Epoch</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">@1078100502.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Specifying-time-zone-rules.html#Specifying-time-zone-rules">Specifying time zone rules</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">TZ=&quot;America/New_York&quot;, TZ=&quot;UTC0&quot;.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Authors-of-parse_005fdatetime.html#Authors-of-parse_005fdatetime">Authors of parse_datetime</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Bellovin, Eggert, Salz, Berets, et al.
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Controlling the Archive Format
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Compression.html#Compression">Compression</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Using Less Space through Compression
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Attributes.html#Attributes">Attributes</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Handling File Attributes
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Portability.html#Portability">Portability</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Making <code>tar</code> Archives More Portable
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="cpio.html#cpio">cpio</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Comparison of <code>tar</code> and <code>cpio</code>
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Using Less Space through Compression
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="gzip.html#gzip">gzip</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Creating and Reading Compressed Archives
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="sparse.html#sparse">sparse</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Archiving Sparse Files
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Creating and Reading Compressed Archives
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="lbzip2.html#lbzip2">lbzip2</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Using lbzip2 with <acronym>GNU</acronym> <code>tar</code>.
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Making <code>tar</code> Archives More Portable
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Portable-Names.html#Portable-Names">Portable Names</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Portable Names
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="dereference.html#dereference">dereference</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Symbolic Links
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="hard-links.html#hard-links">hard links</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Hard Links
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="old.html#old">old</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Old V7 Archives
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="ustar.html#ustar">ustar</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Ustar Archives
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="gnu.html#gnu">gnu</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">GNU and old GNU format archives.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="posix.html#posix">posix</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><acronym>POSIX</acronym> archives
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Checksumming.html#Checksumming">Checksumming</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Checksumming Problems
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Large-or-Negative-Values.html#Large-or-Negative-Values">Large or Negative Values</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Large files, negative time stamps, etc.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Other-Tars.html#Other-Tars">Other Tars</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">How to Extract GNU-Specific Data Using
+                                Other <code>tar</code> Implementations
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+<acronym>GNU</acronym> <code>tar</code> and <acronym>POSIX</acronym> <code>tar</code>
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="PAX-keywords.html#PAX-keywords">PAX keywords</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Controlling Extended Header Keywords.
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+How to Extract GNU-Specific Data Using Other <code>tar</code> Implementations
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Split-Recovery.html#Split-Recovery">Split Recovery</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Members Split Between Volumes
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Sparse-Recovery.html#Sparse-Recovery">Sparse Recovery</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Sparse Members
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Tapes and Other Archive Media
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Device.html#Device">Device</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Device selection and switching
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Remote-Tape-Server.html#Remote-Tape-Server">Remote Tape Server</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Common-Problems-and-Solutions.html#Common-Problems-and-Solutions">Common Problems and Solutions</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Blocking.html#Blocking">Blocking</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Blocking
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Many.html#Many">Many</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Many archives on one tape
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Using-Multiple-Tapes.html#Using-Multiple-Tapes">Using Multiple Tapes</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Using Multiple Tapes
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="label.html#label">label</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Including a Label in the Archive
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="verify.html#verify">verify</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Write-Protection.html#Write-Protection">Write Protection</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Blocking
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Format-Variations.html#Format-Variations">Format Variations</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Format Variations
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Blocking-Factor.html#Blocking-Factor">Blocking Factor</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">The Blocking Factor of an Archive
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Many Archives on One Tape
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Tape-Positioning.html#Tape-Positioning">Tape Positioning</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Tape Positions and Tape Marks
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="mt.html#mt">mt</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">The <code>mt</code> Utility
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Using Multiple Tapes
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Multi_002dVolume-Archives.html#Multi_002dVolume-Archives">Multi-Volume Archives</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Archives Longer than One Tape or Disk
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Tape-Files.html#Tape-Files">Tape Files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Tape Files
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Tarcat.html#Tarcat">Tarcat</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Concatenate Volumes into a Single Archive
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+Tar Internals
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Standard.html#Standard">Standard</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Basic Tar Format
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Extensions.html#Extensions">Extensions</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top"><acronym>GNU</acronym> Extensions to the Archive Format
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Sparse-Formats.html#Sparse-Formats">Sparse Formats</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Storing Sparse Files
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Snapshot-Files.html#Snapshot-Files">Snapshot Files</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Dumpdir.html#Dumpdir">Dumpdir</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Storing Sparse Files
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Old-GNU-Format.html#Old-GNU-Format">Old GNU Format</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="PAX-0.html#PAX-0">PAX 0</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">PAX Format, Versions 0.0 and 0.1
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="PAX-1.html#PAX-1">PAX 1</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">PAX Format, Version 1.0
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Genfile
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="Generate-Mode.html#Generate-Mode">Generate Mode</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">File Generation Mode.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Status-Mode.html#Status-Mode">Status Mode</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">File Status Mode.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Exec-Mode.html#Exec-Mode">Exec Mode</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Synchronous Execution mode.
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+Copying This Manual
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="GNU-Free-Documentation-License.html#GNU-Free-Documentation-License">GNU Free Documentation License</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">License for copying this manual
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+</pre></th></tr></table>
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Introduction.html#Introduction" accesskey="n" rel="next">Introduction</a>, Up: <a href="../dir/index.html" accesskey="u" rel="up">(dir)</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

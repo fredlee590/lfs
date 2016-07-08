@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: PAX 0</title>
+
+<meta name="description" content="GNU tar 1.28: PAX 0">
+<meta name="keywords" content="GNU tar 1.28: PAX 0">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Sparse-Formats.html#Sparse-Formats" rel="up" title="Sparse Formats">
+<link href="PAX-1.html#PAX-1" rel="next" title="PAX 1">
+<link href="Old-GNU-Format.html#Old-GNU-Format" rel="prev" title="Old GNU Format">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="PAX-0"></a>
+<div class="header">
+<p>
+Next: <a href="PAX-1.html#PAX-1" accesskey="n" rel="next">PAX 1</a>, Previous: <a href="Old-GNU-Format.html#Old-GNU-Format" accesskey="p" rel="prev">Old GNU Format</a>, Up: <a href="Sparse-Formats.html#Sparse-Formats" accesskey="u" rel="up">Sparse Formats</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="PAX-Format_002c-Versions-0_002e0-and-0_002e1"></a>
+<h4 class="appendixsubsec">PAX Format, Versions 0.0 and 0.1</h4>
+
+<a name="index-sparse-formats_002c-v_002e0_002e0"></a>
+<p>There are two formats available in this branch.  The version <code>0.0</code>
+is the initial version of sparse format used by <code>tar</code>
+versions 1.14&ndash;1.15.1.  The sparse file map is kept in extended
+(<code>x</code>) PAX header variables:
+</p>
+<dl compact="compact">
+<dd><a name="index-GNU_002esparse_002esize_002c-extended-header-variable"></a>
+</dd>
+<dt><code>GNU.sparse.size</code></dt>
+<dd><p>Real size of the stored file;
+</p>
+</dd>
+<dt><code>GNU.sparse.numblocks</code></dt>
+<dd><a name="index-GNU_002esparse_002enumblocks_002c-extended-header-variable"></a>
+<p>Number of blocks in the sparse map;
+</p>
+</dd>
+<dt><code>GNU.sparse.offset</code></dt>
+<dd><a name="index-GNU_002esparse_002eoffset_002c-extended-header-variable"></a>
+<p>Offset of the data block;
+</p>
+</dd>
+<dt><code>GNU.sparse.numbytes</code></dt>
+<dd><a name="index-GNU_002esparse_002enumbytes_002c-extended-header-variable"></a>
+<p>Size of the data block.
+</p></dd>
+</dl>
+
+<p>The latter two variables repeat for each data block, so the overall
+structure is like this:
+</p>
+<div class="smallexample">
+<pre class="smallexample">GNU.sparse.size=<var>size</var>
+GNU.sparse.numblocks=<var>numblocks</var>
+repeat <var>numblocks</var> times
+  GNU.sparse.offset=<var>offset</var>
+  GNU.sparse.numbytes=<var>numbytes</var>
+end repeat
+</pre></div>
+
+<p>This format presented the following two problems:
+</p>
+<ol>
+<li> Whereas the POSIX specification allows a variable to appear multiple
+times in a header, it requires that only the last occurrence be
+meaningful.  Thus, multiple occurrences of <code>GNU.sparse.offset</code> and
+<code>GNU.sparse.numbytes</code> are conflicting with the POSIX specs.
+
+</li><li> Attempting to extract such archives using a third-party&rsquo;s <code>tar</code>
+results in extraction of sparse files in <em>condensed form</em>.  If
+the <code>tar</code> implementation in question does not support POSIX
+format, it will also extract a file containing extension header
+attributes.  This file can be used to expand the file to its original
+state.  However, posix-aware <code>tar</code>s will usually ignore the
+unknown variables, which makes restoring the file more
+difficult.  See <a href="Sparse-Recovery.html#extracting-sparse-v_002e0_002ex">Extraction of sparse
+members in v.0.0 format</a>, for the detailed description of how to
+restore such members using non-GNU <code>tar</code>s.
+</li></ol>
+
+<a name="index-sparse-formats_002c-v_002e0_002e1"></a>
+<p><acronym>GNU</acronym> <code>tar</code> 1.15.2 introduced sparse format version <code>0.1</code>, which
+attempted to solve these problems.  As its predecessor, this format
+stores sparse map in the extended POSIX header.  It retains
+<code>GNU.sparse.size</code> and <code>GNU.sparse.numblocks</code> variables, but
+instead of <code>GNU.sparse.offset</code>/<code>GNU.sparse.numbytes</code> pairs
+it uses a single variable:
+</p>
+<dl compact="compact">
+<dt><code>GNU.sparse.map</code></dt>
+<dd><a name="index-GNU_002esparse_002emap_002c-extended-header-variable"></a>
+<p>Map of non-null data chunks.  It is a string consisting of
+comma-separated values &quot;<var>offset</var>,<var>size</var>[,<var>offset-1</var>,<var>size-1</var>...]&quot;
+</p></dd>
+</dl>
+
+<p>To address the 2nd problem, the <code>name</code> field in <code>ustar</code>
+is replaced with a special name, constructed using the following pattern:
+</p>
+<div class="smallexample">
+<pre class="smallexample">%d/GNUSparseFile.%p/%f
+</pre></div>
+
+<a name="index-GNU_002esparse_002ename_002c-extended-header-variable"></a>
+<p>The real name of the sparse file is stored in the variable
+<code>GNU.sparse.name</code>.  Thus, those <code>tar</code> implementations
+that are not aware of GNU extensions will at least extract the files
+into separate directories, giving the user a possibility to expand it
+afterwards.  See <a href="Sparse-Recovery.html#extracting-sparse-v_002e0_002ex">Extraction of sparse
+members in v.0.1 format</a>, for the detailed description of how to
+restore such members using non-GNU <code>tar</code>s.
+</p>
+<p>The resulting <code>GNU.sparse.map</code> string can be <em>very</em> long.
+Although POSIX does not impose any limit on the length of a <code>x</code>
+header variable, this possibly can confuse some <code>tar</code>s.
+</p>
+<hr>
+<div class="header">
+<p>
+Next: <a href="PAX-1.html#PAX-1" accesskey="n" rel="next">PAX 1</a>, Previous: <a href="Old-GNU-Format.html#Old-GNU-Format" accesskey="p" rel="prev">Old GNU Format</a>, Up: <a href="Sparse-Formats.html#Sparse-Formats" accesskey="u" rel="up">Sparse Formats</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

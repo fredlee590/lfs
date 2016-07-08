@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: concatenate</title>
+
+<meta name="description" content="GNU tar 1.28: concatenate">
+<meta name="keywords" content="GNU tar 1.28: concatenate">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Advanced-tar.html#Advanced-tar" rel="up" title="Advanced tar">
+<link href="delete.html#delete" rel="next" title="delete">
+<link href="how-to-update.html#how-to-update" rel="prev" title="how to update">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="concatenate"></a>
+<div class="header">
+<p>
+Next: <a href="delete.html#delete" accesskey="n" rel="next">delete</a>, Previous: <a href="update.html#update" accesskey="p" rel="prev">update</a>, Up: <a href="Advanced-tar.html#Advanced-tar" accesskey="u" rel="up">Advanced tar</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Combining-Archives-with-_002d_002dconcatenate"></a>
+<h4 class="subsection">4.2.4 Combining Archives with <samp>--concatenate</samp></h4>
+
+<a name="index-Adding-archives-to-an-archive"></a>
+<a name="index-Concatenating-Archives"></a>
+<a name="index-concatenate"></a>
+<a name="index-catenate"></a>
+<p>Sometimes it may be convenient to add a second archive onto the end of
+an archive rather than adding individual files to the archive.  To add
+one or more archives to the end of another archive, you should use the
+<samp>--concatenate</samp> (<samp>--catenate</samp>, <samp>-A</samp>) operation.
+</p>
+<p>To use <samp>--concatenate</samp>, give the first archive with
+<samp>--file</samp> option and name the rest of archives to be
+concatenated on the command line.  The members, and their member
+names, will be copied verbatim from those archives to the first
+one<a name="DOCF10" href="#FOOT10"><sup>10</sup></a>.
+The new, concatenated archive will be called by the same name as the
+one given with the <samp>--file</samp> option.  As usual, if you omit
+<samp>--file</samp>, <code>tar</code> will use the value of the environment
+variable <code>TAPE</code>, or, if this has not been set, the default archive name.
+</p>
+
+
+<p>To demonstrate how <samp>--concatenate</samp> works, create two small archives
+called <samp>bluesrock.tar</samp> and <samp>folkjazz.tar</samp>, using the relevant
+files from <samp>practice</samp>:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar -cvf bluesrock.tar blues rock</kbd>
+blues
+rock
+$ <kbd>tar -cvf folkjazz.tar folk jazz</kbd>
+folk
+jazz
+</pre></div>
+
+<p>If you like, You can run &lsquo;<samp>tar --list</samp>&rsquo; to make sure the archives
+contain what they are supposed to:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar -tvf bluesrock.tar</kbd>
+-rw-r--r-- melissa/user    105 1997-01-21 19:42 blues
+-rw-r--r-- melissa/user     33 1997-01-20 15:34 rock
+$ <kbd>tar -tvf jazzfolk.tar</kbd>
+-rw-r--r-- melissa/user     20 1996-09-23 16:44 folk
+-rw-r--r-- melissa/user     65 1997-01-30 14:15 jazz
+</pre></div>
+
+<p>We can concatenate these two archives with <code>tar</code>:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>cd ..</kbd>
+$ <kbd>tar --concatenate --file=bluesrock.tar jazzfolk.tar</kbd>
+</pre></div>
+
+<p>If you now list the contents of the <samp>bluesrock.tar</samp>, you will see
+that now it also contains the archive members of <samp>jazzfolk.tar</samp>:
+</p>
+<div class="smallexample">
+<pre class="smallexample">$ <kbd>tar --list --file=bluesrock.tar</kbd>
+blues
+rock
+folk
+jazz
+</pre></div>
+
+<p>When you use <samp>--concatenate</samp>, the source and target archives must
+already exist and must have been created using compatible format
+parameters.  Notice, that <code>tar</code> does not check whether the
+archives it concatenates have compatible formats, it does not
+even check if the files are really tar archives.
+</p>
+<p>Like <samp>--append</samp> (<samp>-r</samp>), this operation cannot be performed on some
+tape drives, due to deficiencies in the formats those tape drives use.
+</p>
+<a name="index-concatenate-vs-cat"></a>
+<a name="index-cat-vs-concatenate"></a>
+<p>It may seem more intuitive to you to want or try to use <code>cat</code> to
+concatenate two archives instead of using the <samp>--concatenate</samp>
+operation; after all, <code>cat</code> is the utility for combining files.
+</p>
+<p>However, <code>tar</code> archives incorporate an end-of-file marker which
+must be removed if the concatenated archives are to be read properly as
+one archive.  <samp>--concatenate</samp> removes the end-of-archive marker
+from the target archive before each new archive is appended.  If you use
+<code>cat</code> to combine the archives, the result will not be a valid
+<code>tar</code> format archive.  If you need to retrieve files from an
+archive that was added to using the <code>cat</code> utility, use the
+<samp>--ignore-zeros</samp> (<samp>-i</samp>) option.  See <a href="Ignore-Zeros.html#Ignore-Zeros">Ignore Zeros</a>, for further
+information on dealing with archives improperly combined using the
+<code>cat</code> shell utility.
+</p>
+<div class="footnote">
+<hr>
+<h4 class="footnotes-heading">Footnotes</h4>
+
+<h3><a name="FOOT10" href="#DOCF10">(10)</a></h3>
+<p>This can cause multiple members to have the same name.  For
+information on how this affects reading the archive, see <a href="multiple.html#multiple">multiple</a>.</p>
+</div>
+<hr>
+<div class="header">
+<p>
+Next: <a href="delete.html#delete" accesskey="n" rel="next">delete</a>, Previous: <a href="update.html#update" accesskey="p" rel="prev">update</a>, Up: <a href="Advanced-tar.html#Advanced-tar" accesskey="u" rel="up">Advanced tar</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

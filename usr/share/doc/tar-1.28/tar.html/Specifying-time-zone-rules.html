@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 
+This manual is for GNU tar (version
+1.28, 22 July 2014), which creates and extracts files
+from archives.
+
+Copyright (C) 1992, 1994-1997, 1999-2001, 2003-2013 Free
+Software Foundation, Inc.
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License", with the
+Front-Cover Texts being "A GNU Manual", and with the Back-Cover Texts
+as in (a) below.  A copy of the license is included in the section
+entitled "GNU Free Documentation License".
+
+(a) The FSF's Back-Cover Text is: "You have the freedom to
+copy and modify this GNU manual." -->
+<!-- Created by GNU Texinfo 6.0, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>GNU tar 1.28: Specifying time zone rules</title>
+
+<meta name="description" content="GNU tar 1.28: Specifying time zone rules">
+<meta name="keywords" content="GNU tar 1.28: Specifying time zone rules">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" rel="index" title="Index of Command Line Options">
+<link href="Index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Date-input-formats.html#Date-input-formats" rel="up" title="Date input formats">
+<link href="Authors-of-parse_005fdatetime.html#Authors-of-parse_005fdatetime" rel="next" title="Authors of parse_datetime">
+<link href="Seconds-since-the-Epoch.html#Seconds-since-the-Epoch" rel="prev" title="Seconds since the Epoch">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nocodebreak {white-space: nowrap}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: serif; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Specifying-time-zone-rules"></a>
+<div class="header">
+<p>
+Next: <a href="Authors-of-parse_005fdatetime.html#Authors-of-parse_005fdatetime" accesskey="n" rel="next">Authors of parse_datetime</a>, Previous: <a href="Seconds-since-the-Epoch.html#Seconds-since-the-Epoch" accesskey="p" rel="prev">Seconds since the Epoch</a>, Up: <a href="Date-input-formats.html#Date-input-formats" accesskey="u" rel="up">Date input formats</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<a name="Specifying-time-zone-rules-1"></a>
+<h3 class="section">7.10 Specifying time zone rules</h3>
+
+<a name="index-TZ"></a>
+<p>Normally, dates are interpreted using the rules of the current time
+zone, which in turn are specified by the <code>TZ</code> environment
+variable, or by a system default if <code>TZ</code> is not set.  To specify a
+different set of default time zone rules that apply just to one date,
+start the date with a string of the form &lsquo;<samp>TZ=&quot;<var>rule</var>&quot;</samp>&rsquo;.  The
+two quote characters (&lsquo;<samp>&quot;</samp>&rsquo;) must be present in the date, and any
+quotes or backslashes within <var>rule</var> must be escaped by a
+backslash.
+</p>
+<p>For example, with the GNU <code>date</code> command you can
+answer the question &ldquo;What time is it in New York when a Paris clock
+shows 6:30am on October 31, 2004?&rdquo; by using a date beginning with
+&lsquo;<samp>TZ=&quot;Europe/Paris&quot;</samp>&rsquo; as shown in the following shell transcript:
+</p>
+<div class="example">
+<pre class="example">$ export TZ=&quot;America/New_York&quot;
+$ date --date='TZ=&quot;Europe/Paris&quot; 2004-10-31 06:30'
+Sun Oct 31 01:30:00 EDT 2004
+</pre></div>
+
+<p>In this example, the <samp>--date</samp> operand begins with its own
+<code>TZ</code> setting, so the rest of that operand is processed according
+to &lsquo;<samp>Europe/Paris</samp>&rsquo; rules, treating the string &lsquo;<samp>2004-10-31
+06:30</samp>&rsquo; as if it were in Paris.  However, since the output of the
+<code>date</code> command is processed according to the overall time zone
+rules, it uses New York time.  (Paris was normally six hours ahead of
+New York in 2004, but this example refers to a brief Halloween period
+when the gap was five hours.)
+</p>
+<p>A <code>TZ</code> value is a rule that typically names a location in the
+<a href="http://www.twinsun.com/tz/tz-link.htm">&lsquo;<samp>tz</samp>&rsquo; database</a>.
+A recent catalog of location names appears in the
+<a href="http://twiki.org/cgi-bin/xtra/tzdate">TWiki Date and Time
+Gateway</a>.  A few non-GNU hosts require a colon before a
+location name in a <code>TZ</code> setting, e.g.,
+&lsquo;<samp>TZ=&quot;:America/New_York&quot;</samp>&rsquo;.
+</p>
+<p>The &lsquo;<samp>tz</samp>&rsquo; database includes a wide variety of locations ranging
+from &lsquo;<samp>Arctic/Longyearbyen</samp>&rsquo; to &lsquo;<samp>Antarctica/South_Pole</samp>&rsquo;, but
+if you are at sea and have your own private time zone, or if you are
+using a non-GNU host that does not support the &lsquo;<samp>tz</samp>&rsquo;
+database, you may need to use a POSIX rule instead.  Simple
+POSIX rules like &lsquo;<samp>UTC0</samp>&rsquo; specify a time zone without
+daylight saving time; other rules can specify simple daylight saving
+regimes.  See <a href="http://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html#TZ-Variable">Specifying the Time Zone with <code>TZ</code></a> in <cite>The GNU C Library</cite>.
+</p>
+<hr>
+<div class="header">
+<p>
+Next: <a href="Authors-of-parse_005fdatetime.html#Authors-of-parse_005fdatetime" accesskey="n" rel="next">Authors of parse_datetime</a>, Previous: <a href="Seconds-since-the-Epoch.html#Seconds-since-the-Epoch" accesskey="p" rel="prev">Seconds since the Epoch</a>, Up: <a href="Date-input-formats.html#Date-input-formats" accesskey="u" rel="up">Date input formats</a> &nbsp; [<a href="Index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Index-of-Command-Line-Options.html#Index-of-Command-Line-Options" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>
