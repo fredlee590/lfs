@@ -1,1 +1,6 @@
-127.0.0.1 localhost ubuntuLFS
+# Begin /etc/hosts (network card version)
+
+127.0.0.1 localhost
+192.168.0.50 lfsfl.example.org
+
+# End /etc/hosts (network card version)
