@@ -3,7 +3,7 @@
 
 # Distro Information
 # These values, if specified here, override the defaults
-#DISTRO="Linux From Scratch" # The distro name
+DISTRO="Linux From Scratch FL" # The distro name
 #DISTRO_CONTACT="lfs-dev@linuxfromscratch.org" # Bug report address
 #DISTRO_MINI="LFS" # Short name used in filenames for distro config
 
@@ -56,7 +56,7 @@
 #HEADLESS=yes
 
 # Write out fsck progress if yes
-#VERBOSE_FSCK=no
+VERBOSE_FSCK=no
 
 # Speed up boot without waiting for settle in udev
 #OMIT_UDEV_SETTLE=y
@@ -81,7 +81,7 @@
 #KILLDELAY=3
 
 # Optional sysklogd parameters
-#SYSKLOGD_PARMS="-m 0"
+SYSKLOGD_PARMS="-m 0"
 
 # Console parameters
 #UNICODE=1

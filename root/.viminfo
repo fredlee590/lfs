@@ -7,10 +7,17 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/VERBOS
+
 # Command Line History (newest to oldest):
+:x
+:w
 :q
 
 # Search String History (newest to oldest):
+?/VERBOS
+?/OMIT_UDEV
 
 # Expression History (newest to oldest):
 
@@ -19,12 +26,29 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+""-	CHAR	0
+	#
 
 # File marks:
+'0  88  0  /etc/sysconfig/rc.site
+'1  6  28  /etc/sysconfig/rc.site
 
 # Jumplist (newest first):
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
 
 # History of marks within files (newest to oldest):
+
+> /etc/sysconfig/rc.site
+	"	88	0
+	^	62	1
+	.	59	0
+	+	84	0
+	+	6	28
+	+	62	0
+	+	59	0
 
 > /sources/vim74/option-window
 	"	84	0
