@@ -26,20 +26,120 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+"0	LINE	0
+	/dev/sda5      /            ext4     defaults            1     1
 ""-	CHAR	0
-	#
+	1
 
 # File marks:
-'0  88  0  /etc/sysconfig/rc.site
-'1  6  28  /etc/sysconfig/rc.site
+'0  8  37  /etc/fstab
+'1  15  15  /etc/fstab
+'2  7  20  /etc/fstab
+'3  13  61  /etc/fstab
+'4  88  0  /etc/sysconfig/rc.site
+'5  6  28  /etc/sysconfig/rc.site
 
 # Jumplist (newest first):
+-'  8  37  /etc/fstab
+-'  1  0  /etc/fstab
+-'  15  15  /etc/fstab
+-'  7  20  /etc/fstab
+-'  13  61  /etc/fstab
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  12  61  /etc/fstab
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  11  61  /etc/fstab
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
+-'  88  0  /etc/sysconfig/rc.site
+-'  62  0  /etc/sysconfig/rc.site
+-'  1  0  /etc/sysconfig/rc.site
+-'  6  28  /etc/sysconfig/rc.site
 -'  88  0  /etc/sysconfig/rc.site
 -'  62  0  /etc/sysconfig/rc.site
 -'  1  0  /etc/sysconfig/rc.site
 -'  6  28  /etc/sysconfig/rc.site
 
 # History of marks within files (newest to oldest):
+
+> /etc/fstab
+	"	8	37
+	^	7	64
+	.	7	63
+	+	6	36
+	+	3	44
+	+	4	49
+	+	6	50
+	+	8	36
+	+	3	55
+	+	4	60
+	+	6	54
+	+	3	55
+	+	6	55
+	+	4	59
+	+	3	62
+	+	4	62
+	+	6	62
+	+	8	62
+	+	10	61
+	+	11	61
+	+	12	61
+	+	13	61
+	+	7	20
+	+	8	63
+	+	7	63
 
 > /etc/sysconfig/rc.site
 	"	88	0
