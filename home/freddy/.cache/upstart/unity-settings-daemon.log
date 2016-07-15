@@ -1,0 +1,33 @@
+
+(gnome-terminal:2514): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+
+(gnome-terminal:2691): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(unity-settings-daemon:1800): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(gnome-terminal:3210): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+
+(unity-settings-daemon:1800): Gdk-WARNING **: unity-settings-daemon: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+

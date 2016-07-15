@@ -1,0 +1,21 @@
+logrotate state -- version 2
+"/home/lfs/.cache/upstart/unity-settings-daemon.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/*.log" 2016-1-5-23:0:0
+"/home/lfs/.cache/upstart/gnome-session-Unity.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/im-config.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/window-stack-bridge.log" 2015-12-28-0:5:46
+"/home/lfs/.cache/upstart/dbus.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/update-notifier-release.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/gnome-keyring-ssh.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/unity7.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/hud.log" 2016-2-1-23:4:33
+"/home/lfs/.cache/upstart/indicator-application.log" 2016-1-18-22:6:11
+"/home/lfs/.cache/upstart/indicator-power.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/indicator-bluetooth.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/ssh-agent.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/indicator-sound.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/unity-panel-service.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/at-spi2-registryd.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/indicator-printers.log" 2016-2-8-22:55:13
+"/home/lfs/.cache/upstart/update-notifier-crash-_var_crash__bin_bash.1001.crash.log" 2016-1-18-22:6:11
+"/home/lfs/.cache/upstart/gnome-keyring-gpg.log" 2016-2-8-22:55:13

@@ -1,0 +1,477 @@
+ERROR 2016-02-08 22:59:29 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-08 22:59:29 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-08 22:59:29 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-08 23:44:29 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-08 23:44:29 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-08 23:44:29 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-09 00:12:38 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-09 00:12:38 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-09 00:12:38 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-09 23:41:16 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-09 23:41:16 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-09 23:41:16 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-09 23:47:21 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-09 23:47:21 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-09 23:47:21 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-09 23:53:58 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-09 23:53:58 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-09 23:53:58 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-10 00:28:24 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-10 00:28:24 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-10 00:28:24 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-10 00:35:16 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-10 00:35:16 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-10 00:35:16 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-10 00:49:17 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-10 00:49:17 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-10 00:49:17 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-10 23:22:02 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-10 23:22:02 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-10 23:22:02 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 50 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 50 was not found when attempting to remove it
+ERROR 2016-02-25 22:01:08 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-25 22:01:08 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-25 22:01:08 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-25 22:26:12 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-25 22:26:12 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-25 22:26:12 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-25 22:50:49 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-25 22:50:49 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-25 22:50:49 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-26 00:00:29 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-26 00:00:29 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-26 00:00:29 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-26 00:21:57 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-26 00:21:57 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-26 00:21:57 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 81 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 81 was not found when attempting to remove it
+ERROR 2016-02-28 21:31:20 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-28 21:31:20 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-28 21:31:20 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-28 22:42:45 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-28 22:42:45 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-28 22:42:45 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-02-28 22:53:58 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-02-28 22:53:58 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-02-28 22:53:58 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-03-02 01:12:08 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 105 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 105 was not found when attempting to remove it
+ERROR 2016-03-02 23:36:59 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+ERROR 2016-03-02 23:42:12 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-02 23:42:12 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-02 23:42:12 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-03-03 00:22:41 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-03 00:22:41 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-03 00:22:41 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-03-03 21:35:16 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-03 21:35:16 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-03 21:35:16 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-03-03 21:55:53 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-03 21:55:53 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-03 21:55:53 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-03-03 22:43:43 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-03 22:43:43 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-03 22:43:43 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 133 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 133 was not found when attempting to remove it
+ERROR 2016-03-10 01:55:24 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-10 01:55:24 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-10 01:55:24 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-03-10 01:59:00 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+ERROR 2016-03-10 02:29:27 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+ERROR 2016-03-10 02:39:00 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-10 02:39:00 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-10 02:39:00 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 166 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 166 was not found when attempting to remove it
+ERROR 2016-03-11 00:14:42 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-11 00:14:42 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-11 00:14:42 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 190 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 190 was not found when attempting to remove it
+ERROR 2016-03-11 17:45:04 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-11 17:45:04 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-11 17:45:04 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-03-11 18:30:05 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 220 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 220 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 249 was not found when attempting to remove it
+ERROR 2016-03-15 22:25:55 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-15 22:25:55 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-15 22:25:55 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-03-15 22:56:52 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-15 22:56:52 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-15 22:56:52 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 276 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 276 was not found when attempting to remove it
+ERROR 2016-03-16 23:10:04 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-16 23:10:04 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-16 23:10:04 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 302 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 302 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 330 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 363 was not found when attempting to remove it
+ERROR 2016-03-24 00:37:35 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-24 00:37:35 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-24 00:37:35 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 392 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 392 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 421 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 421 was not found when attempting to remove it
+ERROR 2016-03-31 00:00:09 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-31 00:00:09 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-31 00:00:09 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-03-31 00:30:35 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-03-31 00:30:35 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-03-31 00:30:35 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 446 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 446 was not found when attempting to remove it
+ERROR 2016-04-06 22:55:29 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-06 22:55:29 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-06 22:55:29 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-07 00:20:41 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-07 00:20:41 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-07 00:20:41 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-07 00:51:59 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-07 00:51:59 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-07 00:51:59 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-07 01:08:13 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-07 01:08:13 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-07 01:08:13 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 478 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 478 was not found when attempting to remove it
+ERROR 2016-04-07 01:19:36 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-07 01:19:36 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-07 01:19:36 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-07 01:35:34 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-07 01:35:34 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-07 01:35:34 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-07 02:02:46 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-07 02:02:46 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-07 02:02:46 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 507 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 507 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 533 was not found when attempting to remove it
+ERROR 2016-04-08 00:19:07 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-08 00:19:07 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-08 00:19:07 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-08 00:34:07 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-08 00:34:07 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-08 00:34:07 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-08 01:09:29 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-08 01:09:29 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-08 01:09:29 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 560 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 560 was not found when attempting to remove it
+ERROR 2016-04-12 00:36:33 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-12 00:36:33 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-12 00:36:33 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+WARN  2016-04-12 00:36:34 unity.glib.dbus.proxy GLibDBusProxy.cpp:470 Calling method "SyncOne" on object path: "/com/canonical/Unity/Panel/Service" failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name com.canonical.Unity.Panel.Service.LockScreen was not provided by any .service files
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 591 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 591 was not found when attempting to remove it
+ERROR 2016-04-13 00:48:31 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+ERROR 2016-04-13 01:07:57 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-13 01:07:57 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-13 01:07:57 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 621 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 621 was not found when attempting to remove it
+ERROR 2016-04-18 22:48:08 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-18 22:48:08 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-18 22:48:08 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-18 23:28:15 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-18 23:28:15 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-18 23:28:15 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-19 00:11:08 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-19 00:11:08 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-19 00:11:08 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-19 00:36:22 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-19 00:36:22 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-19 00:36:22 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-19 23:07:21 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-19 23:07:21 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-19 23:07:21 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-20 00:17:01 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+ERROR 2016-04-20 00:35:37 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-20 00:35:37 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-20 00:35:37 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-04-20 01:30:49 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-04-20 01:30:49 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-04-20 01:30:49 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 646 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 646 was not found when attempting to remove it
+ERROR 2016-06-18 01:23:20 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-18 01:23:20 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-18 01:23:20 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 676 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 676 was not found when attempting to remove it
+ERROR 2016-06-22 00:01:42 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+ERROR 2016-06-22 00:18:24 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-22 00:18:24 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-22 00:18:24 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 702 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 702 was not found when attempting to remove it
+ERROR 2016-06-23 01:20:55 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 733 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 733 was not found when attempting to remove it
+ERROR 2016-06-23 23:02:42 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-23 23:02:42 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-23 23:02:42 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-23 23:08:39 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-23 23:08:39 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-23 23:08:39 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-23 23:15:58 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-23 23:15:58 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-23 23:15:58 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 760 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 760 was not found when attempting to remove it
+ERROR 2016-06-25 00:52:31 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-25 00:52:31 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-25 00:52:31 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-25 01:08:50 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-25 01:08:50 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-25 01:08:50 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 788 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 788 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 818 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 818 was not found when attempting to remove it
+ERROR 2016-06-27 22:29:30 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-27 22:29:30 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-27 22:29:30 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 846 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 846 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 873 was not found when attempting to remove it
+ERROR 2016-06-27 23:01:13 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-27 23:01:13 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-27 23:01:13 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+WARN  2016-06-27 23:01:14 unity.glib.dbus.proxy GLibDBusProxy.cpp:470 Calling method "SyncOne" on object path: "/com/canonical/Unity/Panel/Service" failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name com.canonical.Unity.Panel.Service.LockScreen was not provided by any .service files
+ERROR 2016-06-27 23:16:28 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-27 23:16:28 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-27 23:16:28 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 900 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 900 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 927 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 957 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 957 was not found when attempting to remove it
+ERROR 2016-06-28 00:05:51 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-28 00:05:51 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-28 00:05:51 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 985 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 985 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1016 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1016 was not found when attempting to remove it
+ERROR 2016-06-29 00:06:11 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-29 00:06:11 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-29 00:06:11 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-29 22:55:03 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-29 22:55:03 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-29 22:55:03 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-29 23:14:31 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-29 23:14:31 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-29 23:14:31 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-29 23:21:21 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-29 23:21:21 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-29 23:21:21 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-30 00:13:10 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-30 00:13:10 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-30 00:13:10 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-30 22:54:34 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-30 22:54:34 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-30 22:54:34 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-30 23:01:09 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+ERROR 2016-06-30 23:07:35 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-30 23:07:35 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-30 23:07:35 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-30 23:13:24 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-30 23:13:24 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-30 23:13:24 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-30 23:23:00 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-30 23:23:00 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-30 23:23:00 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-30 23:37:14 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-30 23:37:14 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-30 23:37:14 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-06-30 23:55:38 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-06-30 23:55:38 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-06-30 23:55:38 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1043 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1043 was not found when attempting to remove it
+ERROR 2016-07-05 22:25:56 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-05 22:25:56 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-05 22:25:56 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-05 22:32:12 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-05 22:32:12 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-05 22:32:12 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-05 22:40:28 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-05 22:40:28 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-05 22:40:28 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1070 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1070 was not found when attempting to remove it
+ERROR 2016-07-06 23:00:34 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-06 23:00:34 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-06 23:00:34 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-06 23:15:07 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-06 23:15:07 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-06 23:15:07 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-06 23:28:36 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-06 23:28:36 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-06 23:28:36 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-07 00:05:21 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-07 00:05:21 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-07 00:05:21 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-07 00:16:44 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-07 00:16:44 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-07 00:16:44 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-07 01:28:21 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1097 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1097 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1124 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1124 was not found when attempting to remove it
+ERROR 2016-07-09 01:46:48 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-09 01:46:48 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-09 01:46:48 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+WARN  2016-07-09 01:46:49 unity.glib.dbus.proxy GLibDBusProxy.cpp:470 Calling method "SyncOne" on object path: "/com/canonical/Unity/Panel/Service" failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name com.canonical.Unity.Panel.Service.LockScreen was not provided by any .service files
+ERROR 2016-07-10 23:07:38 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-10 23:07:38 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-10 23:07:38 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-10 23:17:51 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-10 23:17:51 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-10 23:17:51 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-10 23:30:39 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-10 23:30:39 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-10 23:30:39 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-10 23:36:37 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-10 23:36:37 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-10 23:36:37 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1161 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1161 was not found when attempting to remove it
+ERROR 2016-07-11 22:20:18 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-11 22:20:18 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-11 22:20:18 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-11 22:58:08 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-11 22:58:08 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-11 22:58:08 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+WARN  2016-07-11 22:58:09 unity.glib.dbus.proxy GLibDBusProxy.cpp:470 Calling method "SyncOne" on object path: "/com/canonical/Unity/Panel/Service" failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name com.canonical.Unity.Panel.Service.LockScreen was not provided by any .service files
+ERROR 2016-07-11 23:35:17 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-11 23:35:17 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-11 23:35:17 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-11 23:45:22 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-11 23:45:22 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-11 23:45:22 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1192 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1192 was not found when attempting to remove it
+ERROR 2016-07-12 23:23:52 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-12 23:23:52 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-12 23:23:52 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-13 00:40:05 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-13 00:40:05 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-13 00:40:05 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1223 was not found when attempting to remove it
+
+(deja-dup-monitor:2296): GLib-CRITICAL **: Source ID 1223 was not found when attempting to remove it
+ERROR 2016-07-14 00:18:05 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-14 00:18:05 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-14 00:18:05 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-14 00:58:56 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-14 00:58:56 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-14 00:58:56 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-14 02:03:20 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+ERROR 2016-07-14 02:11:36 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-14 02:11:36 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-14 02:11:36 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-14 22:02:40 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-14 22:02:40 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-14 22:02:40 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-14 22:19:32 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-14 22:19:32 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-14 22:19:32 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-14 23:04:58 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-14 23:04:58 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-14 23:04:58 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+WARN  2016-07-14 23:04:59 unity.glib.dbus.proxy GLibDBusProxy.cpp:470 Calling method "SyncOne" on object path: "/com/canonical/Unity/Panel/Service" failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name com.canonical.Unity.Panel.Service.LockScreen was not provided by any .service files
+WARN  2016-07-14 23:05:00 unity.glib.dbus.proxy GLibDBusProxy.cpp:470 Calling method "SyncOne" on object path: "/com/canonical/Unity/Panel/Service" failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name com.canonical.Unity.Panel.Service.LockScreen was not provided by any .service files
+ERROR 2016-07-15 01:18:01 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-15 01:18:01 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-15 01:18:01 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-07-15 01:26:08 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-07-15 01:26:08 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-07-15 01:26:08 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
