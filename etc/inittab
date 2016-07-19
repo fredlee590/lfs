@@ -2,7 +2,7 @@
 
 id:3:initdefault:
 
-si:sysinit:/etc/rc.d/init.d/rc S
+si::sysinit:/etc/rc.d/init.d/rc S
 
 10:0:wait:/etc/rc.d/init.d/rc 0
 11:S1:wait:/etc/rc.d/init.d/rc 1

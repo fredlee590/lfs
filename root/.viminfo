@@ -34,16 +34,18 @@
 	w
 
 # File marks:
-'0  1  12  /etc/inittab
-'1  8  37  /etc/fstab
-'2  15  15  /etc/fstab
-'3  7  20  /etc/fstab
-'4  13  61  /etc/fstab
-'5  88  0  /etc/sysconfig/rc.site
-'6  6  28  /etc/sysconfig/rc.site
+'0  5  3  /etc/inittab
+'1  1  12  /etc/inittab
+'2  8  37  /etc/fstab
+'3  15  15  /etc/fstab
+'4  7  20  /etc/fstab
+'5  13  61  /etc/fstab
+'6  88  0  /etc/sysconfig/rc.site
+'7  6  28  /etc/sysconfig/rc.site
 
 # Jumplist (newest first):
--'  1  12  /etc/inittab
+-'  5  3  /etc/inittab
+-'  1  0  /etc/inittab
 -'  8  37  /etc/fstab
 -'  1  0  /etc/fstab
 -'  15  15  /etc/fstab
@@ -144,10 +146,11 @@
 # History of marks within files (newest to oldest):
 
 > /etc/inittab
-	"	1	12
-	^	24	13
-	.	24	12
+	"	5	3
+	^	5	4
+	.	5	3
 	+	24	12
+	+	5	3
 
 > /etc/fstab
 	"	8	37
