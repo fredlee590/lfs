@@ -21,6 +21,6 @@ su:S016:once:/sbin/sulogin
 3:2345:respawn:/sbin/agetty tty3 9600
 4:2345:respawn:/sbin/agetty tty4 9600
 5:2345:respawn:/sbin/agetty tty5 9600
-6:2345:respwan:/sbin/agetty tty6 9600
+6:2345:respawn:/sbin/agetty tty6 9600
 
 # End /etc/inittab
